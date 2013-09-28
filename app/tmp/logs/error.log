@@ -144,3 +144,15 @@ Stack Trace:
 #6 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(VideosController), Object(CakeRequest), Object(CakeResponse))
 #7 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2013-09-28 21:16:48 Error: [SocketException] Invalid email: "from@your_app_domain.com"
+Request URL: /users/remember_password
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Network\Email\CakeEmail.php(570): CakeEmail->_setEmail('_from', 'from@your_app_d...', NULL)
+#1 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Network\Email\CakeEmail.php(356): CakeEmail->_setEmailSingle('_from', 'from@your_app_d...', NULL, 'From requires o...')
+#2 C:\Users\Lucas\Documents\GitHub\desafio\app\Controller\UsersController.php(256): CakeEmail->from('from@your_app_d...')
+#3 [internal function]: UsersController->remember_password()
+#4 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
