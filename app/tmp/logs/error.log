@@ -1,0 +1,71 @@
+2013-09-28 19:49:40 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 C:\wamp\www\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\lib\Cake\Model\Model.php(3221): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\lib\Cake\Model\Model.php(3243): Model->setSource('users')
+#5 C:\wamp\www\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\app\View\Elements\form_login.ctp(20): FormHelper->create('User', Array)
+#9 C:\wamp\www\lib\Cake\View\View.php(945): include('C:\wamp\www\app...')
+#10 C:\wamp\www\lib\Cake\View\View.php(907): View->_evaluate('C:\wamp\www\app...', Array)
+#11 C:\wamp\www\lib\Cake\View\View.php(1208): View->_render('C:\wamp\www\app...', Array)
+#12 C:\wamp\www\lib\Cake\View\View.php(414): View->_renderElement('C:\wamp\www\app...', Array, Array)
+#13 C:\wamp\www\app\View\Users\login.ctp(2): View->element('form_login')
+#14 C:\wamp\www\lib\Cake\View\View.php(945): include('C:\wamp\www\app...')
+#15 C:\wamp\www\lib\Cake\View\View.php(907): View->_evaluate('C:\wamp\www\app...', Array)
+#16 C:\wamp\www\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\app...')
+#17 C:\wamp\www\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#18 C:\wamp\www\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#19 C:\wamp\www\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#20 C:\wamp\www\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#21 C:\wamp\www\index.php(43): require('C:\wamp\www\app...')
+#22 {main}
+2013-09-28 19:50:01 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 C:\wamp\www\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\wamp\www\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\wamp\www\lib\Cake\Model\Model.php(3221): ConnectionManager::getDataSource('default')
+#3 C:\wamp\www\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\wamp\www\lib\Cake\Model\Model.php(3243): Model->setSource('users')
+#5 C:\wamp\www\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\wamp\www\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\wamp\www\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('User', 'fields')
+#8 C:\wamp\www\app\View\Elements\form_login.ctp(20): FormHelper->create('User', Array)
+#9 C:\wamp\www\lib\Cake\View\View.php(945): include('C:\wamp\www\app...')
+#10 C:\wamp\www\lib\Cake\View\View.php(907): View->_evaluate('C:\wamp\www\app...', Array)
+#11 C:\wamp\www\lib\Cake\View\View.php(1208): View->_render('C:\wamp\www\app...', Array)
+#12 C:\wamp\www\lib\Cake\View\View.php(414): View->_renderElement('C:\wamp\www\app...', Array, Array)
+#13 C:\wamp\www\app\View\Users\login.ctp(2): View->element('form_login')
+#14 C:\wamp\www\lib\Cake\View\View.php(945): include('C:\wamp\www\app...')
+#15 C:\wamp\www\lib\Cake\View\View.php(907): View->_evaluate('C:\wamp\www\app...', Array)
+#16 C:\wamp\www\lib\Cake\View\View.php(471): View->_render('C:\wamp\www\app...')
+#17 C:\wamp\www\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#18 C:\wamp\www\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#19 C:\wamp\www\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#20 C:\wamp\www\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#21 C:\wamp\www\index.php(43): require('C:\wamp\www\app...')
+#22 {main}
+2013-09-28 20:20:09 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /login
+Stack Trace:
+#0 C:\wamp\www\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
