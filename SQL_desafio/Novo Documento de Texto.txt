@@ -10,3 +10,12 @@ CREATE TABLE `users` (
   `hash_change_password` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS photos (
+id int(11) NOT NULL AUTO_INCREMENT,
+nome varchar(255) NOT NULL,
+photo varchar(255) NOT NULL,
+thumbnail varchar(255) NOT NULL,
+order int(11) NOT NULL,
+PRIMARY KEY (id)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=37 ;
