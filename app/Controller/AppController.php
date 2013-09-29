@@ -38,6 +38,7 @@ class AppController extends Controller
 
   public function beforeFilter()
   {
+
     $this->Cookie->time = '30 Days';  // or '1 hour'
     $this->Cookie->key = 'AS()XA(S*D)AS8dA(Sd80A(SDA*SDAS%D4$AS#SD@ASDtyASGH)_AS0dAoIASNKAshgaFA$#S21d24a3s45dAS$3d#A@$SDASCHVASCa4s33%$ˆ$%$#s253$AS5#Â$%s645$#AS@%#AˆS6%A&*SÂ%S$';
     $this->Cookie->httpOnly = true;
@@ -73,6 +74,8 @@ class AppController extends Controller
 
     # To enable portuguese language as main
     # Configure::write('Config.language', 'por');
+	
+	 
   }
 }
 
