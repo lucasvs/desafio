@@ -1,6 +1,7 @@
 #crie um banco chamado desafio
 #crie um usuário "desafio" e senha "desafio" para acessar este banco.
 
+
 CREATE DATABASE desafio;
 
 CREATE TABLE `users` (
