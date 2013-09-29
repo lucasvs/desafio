@@ -156,3 +156,12 @@ Stack Trace:
 #6 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #7 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2013-09-29 01:21:08 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /admin
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
