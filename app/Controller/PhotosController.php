@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 App::uses('AppController', 'Controller');
 /**
  * Photos Controller
@@ -15,6 +16,18 @@ class PhotosController extends AppController {
 	public function index() {
 		$this->Photo->recursive = 0;
 		$this->set('photos', $this->paginate());
+=======
+class PhotosController extends AppController
+{
+	function beforeFilter(){     
+             parent::beforeFilter();    
+}
+
+	public function index()
+	{
+		$this->set('photos',$this->Photo->find('all',array(
+			'ordem' => array('Photo.ordem'))));
+>>>>>>> e4e8a466de5e613e731914267f2c0e903cb0272b
 	}
 
 /**
