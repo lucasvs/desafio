@@ -67,12 +67,15 @@
                     <li class="<?php echo $this->params->controller == 'users' ? 'active' : ''; ?>">
                         <?php echo $this->Html->link('Users', '/users') ?>
                     </li>
+                    <li class="<?php echo $this->params->controller == 'concursos' ? 'active' : ''; ?>">
+                        <?php echo $this->Html->link('Concursos', array('controller'=>'concursos')) ?>
+                    </li>
                 <?php } ?>
                 <li class="<?php echo $this->params->controller == 'users' && $this->params->action == 'add' ? 'active' : '' ?>">
                     <?php echo $this->Html->link(__('Register'), array('controller' => 'users', 'action' => 'add')) ?>
                 </li>
                 <?php if (!AuthComponent::user('id')) { ?>
-                    <li class="">
+                    <li class="<?php echo $this->params->controller == 'users' && $this->params->action == 'login   ' ? 'active' : '' ?>">
                         <?php echo $this->Html->link('Login', array('controller' => 'users', 'action' => 'login')) ?>
                     </li>
                 <?php } ?>
