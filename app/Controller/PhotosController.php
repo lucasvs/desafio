@@ -7,7 +7,6 @@ class PhotosController extends AppController
 
 	public function index()
 	{
-			$this->layout = 'Gerenciador.default';
 		$this->set('photos',$this->Photo->find('all',array(
 			'ordem' => array('Photo.ordem'))));
 	}
