@@ -1,9 +1,9 @@
 <?php
 /**
- * PollFixture
+ * RaFixture
  *
  */
-class PollFixture extends CakeTestFixture {
+class RaFixture extends CakeTestFixture {
 
 /**
  * Fields
@@ -12,10 +12,10 @@ class PollFixture extends CakeTestFixture {
  */
 	public $fields = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
-		'photo_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'index'),
+		'ra' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'unique'),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
-			'photo_id' => array('column' => 'photo_id', 'unique' => 0)
+			'ra' => array('column' => 'ra', 'unique' => 1)
 		),
 		'tableParameters' => array('charset' => 'latin1', 'collate' => 'latin1_swedish_ci', 'engine' => 'InnoDB')
 	);
@@ -28,7 +28,7 @@ class PollFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'photo_id' => 1
+			'ra' => 1
 		),
 	);
 

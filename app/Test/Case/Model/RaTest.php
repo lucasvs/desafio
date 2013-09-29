@@ -1,11 +1,11 @@
 <?php
-App::uses('Poll', 'Model');
+App::uses('Ra', 'Model');
 
 /**
- * Poll Test Case
+ * Ra Test Case
  *
  */
-class PollTest extends CakeTestCase {
+class RaTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,6 +13,7 @@ class PollTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
+		'app.ra',
 		'app.poll',
 		'app.photo',
 		'app.concurso'
@@ -25,7 +26,7 @@ class PollTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->Poll = ClassRegistry::init('Poll');
+		$this->Ra = ClassRegistry::init('Ra');
 	}
 
 /**
@@ -34,7 +35,7 @@ class PollTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->Poll);
+		unset($this->Ra);
 
 		parent::tearDown();
 	}

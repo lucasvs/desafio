@@ -1,11 +1,11 @@
 <?php
-App::uses('PhotosController', 'Controller');
+App::uses('RasController', 'Controller');
 
 /**
- * PhotosController Test Case
+ * RasController Test Case
  *
  */
-class PhotosControllerTest extends ControllerTestCase {
+class RasControllerTest extends ControllerTestCase {
 
 /**
  * Fixtures
@@ -13,9 +13,10 @@ class PhotosControllerTest extends ControllerTestCase {
  * @var array
  */
 	public $fixtures = array(
+		'app.ra',
+		'app.poll',
 		'app.photo',
 		'app.concurso',
-		'app.poll',
 		'app.user',
 		'app.product'
 	);

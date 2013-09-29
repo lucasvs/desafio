@@ -36,6 +36,11 @@
 			<?php echo $this->Html->link($poll['Photo']['id'], array('controller' => 'photos', 'action' => 'view', $poll['Photo']['id']), array('class' => '')); ?>
 			&nbsp;
 		</td>
+</tr><tr>		<td><strong><?php echo __('Ra Id'); ?></strong></td>
+		<td>
+			<?php echo h($poll['Poll']['ra_id']); ?>
+			&nbsp;
+		</td>
 </tr>			</table><!-- .table table-striped table-bordered -->
 			
 		</div><!-- .view -->
