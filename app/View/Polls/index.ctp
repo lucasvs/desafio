@@ -6,7 +6,9 @@
 		<div class="actions">
 		
 			<ul class="nav nav-list bs-docs-sidenav">
-				<li><?php echo $this->Html->link(__('New Photo'), array('action' => 'add'), array('class' => '')); ?></li>							</ul><!-- .nav nav-list bs-docs-sidenav -->
+				<li><?php echo $this->Html->link(__('New Poll'), array('action' => 'add'), array('class' => '')); ?></li>						<li><?php echo $this->Html->link(__('List Photos'), array('controller' => 'photos', 'action' => 'index'), array('class' => '')); ?></li> 
+		<li><?php echo $this->Html->link(__('New Photo'), array('controller' => 'photos', 'action' => 'add'), array('class' => '')); ?></li> 
+			</ul><!-- .nav nav-list bs-docs-sidenav -->
 			
 		</div><!-- .actions -->
 		
@@ -14,33 +16,27 @@
 	
 	<div id="page-content" class="span9">
 
-		<div class="photos index">
+		<div class="polls index">
 		
-			<h2><?php echo __('Photos'); ?></h2>
+			<h2><?php echo __('Polls'); ?></h2>
 			
 			<table cellpadding="0" cellspacing="0" class="table table-striped table-bordered">
 				<tr>
 											<th><?php echo $this->Paginator->sort('id'); ?></th>
-											<th><?php echo $this->Paginator->sort('nome'); ?></th>
-											<th><?php echo $this->Paginator->sort('photo'); ?></th>
-											<th><?php echo $this->Paginator->sort('thumbnail'); ?></th>
-											<th><?php echo $this->Paginator->sort('ordem'); ?></th>
-											<th><?php echo $this->Paginator->sort('concurso_id'); ?></th>
+											<th><?php echo $this->Paginator->sort('photo_id'); ?></th>
 											<th class="actions"><?php echo __('Actions'); ?></th>
 				</tr>
 				<?php
-				foreach ($photos as $photo): ?>
+				foreach ($polls as $poll): ?>
 	<tr>
-		<td><?php echo h($photo['Photo']['id']); ?>&nbsp;</td>
-		<td><?php echo h($photo['Photo']['nome']); ?>&nbsp;</td>
-		<td><?php echo h($photo['Photo']['photo']); ?>&nbsp;</td>
-		<td><?php echo h($photo['Photo']['thumbnail']); ?>&nbsp;</td>
-		<td><?php echo h($photo['Photo']['ordem']); ?>&nbsp;</td>
-		<td><?php echo h($photo['Photo']['concurso_id']); ?>&nbsp;</td>
+		<td><?php echo h($poll['Poll']['id']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($poll['Photo']['id'], array('controller' => 'photos', 'action' => 'view', $poll['Photo']['id'])); ?>
+		</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $photo['Photo']['id']), array('class' => 'btn btn-mini')); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $photo['Photo']['id']), array('class' => 'btn btn-mini')); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $photo['Photo']['id']), array('class' => 'btn btn-mini'), __('Are you sure you want to delete # %s?', $photo['Photo']['id'])); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $poll['Poll']['id']), array('class' => 'btn btn-mini')); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $poll['Poll']['id']), array('class' => 'btn btn-mini')); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $poll['Poll']['id']), array('class' => 'btn btn-mini'), __('Are you sure you want to delete # %s?', $poll['Poll']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

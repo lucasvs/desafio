@@ -1,156 +1,97 @@
 <?php
-class PhotosController extends AppController
-{
-	function beforeFilter(){     
-             parent::beforeFilter();    
-}
+App::uses('AppController', 'Controller');
+/**
+ * Photos Controller
+ *
+ * @property Photo $Photo
+ */
+class PhotosController extends AppController {
 
-	public function index()
-	{
-			$this->layout = 'Gerenciador.default';
-		$this->set('photos',$this->Photo->find('all',array(
-			'ordem' => array('Photo.ordem'))));
+/**
+ * index method
+ *
+ * @return void
+ */
+	public function index() {
+		$this->Photo->recursive = 0;
+		$this->set('photos', $this->paginate());
 	}
 
-	public function add()
-	{
-	$this->layout = 'Gerenciador.default';
-		if(!empty($_FILES))
-		{
-			$errors = array();
+/**
+ * view method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function view($id = null) {
+		if (!$this->Photo->exists($id)) {
+			throw new NotFoundException(__('Invalid photo'));
+		}
+		$options = array('conditions' => array('Photo.' . $this->Photo->primaryKey => $id));
+		$this->set('photo', $this->Photo->find('first', $options));
+	}
 
-			// Organiza o array de multiple upload
-			$file = $this->data['Photo']['photo'];
-			
-			// Abre cada array de arquivos
-			//foreach($files as $file) 
-		//	{
-				// Caso o arquivo seja válido
-				if( $file['error'] == 0 )
-				{
-					// Faz o upload da foto no tamanho original
-					if( $foto = $this->Arquivo->upload($file,'fotos/') )
-					{
-						// Verifica o tamanho mínimo para criar o thumbnail
-						if( !$this->Arquivo->validaTamanho(
-							$foto['link'],
-							Configure::read('Gerenciador.photo_thumbnail_size.0'), // Width
-							Configure::read('Gerenciador.photo_thumbnail_size.1'), // Height
-							'min'						
-							) )
-						{
-							array_push($errors,$foto['nome']);
-						}
-						else
-						{							
-							// Cria o thumbnail
-							$thumbnail = $this->Arquivo->generateThumbnail(
-								$file, // File
-								'fotos/', // Pasta em que será salvo
-								Configure::read('Gerenciador.photo_thumbnail_size.0'), // Width
-								Configure::read('Gerenciador.photo_thumbnail_size.1'), // Height
-								'crop', // Crop
-								$foto['nome_no_ext']); // Nome do arquivo sem extensão
-
-							// Salva os dados no banco
-							$data = array(
-								'Photo' => array(
-									'nome' => $foto['nome'],
-									'photo' => $foto['link'],
-									'thumbnail' => $thumbnail['link'],
-								)
-							);
-							$this->Photo->create();
-							$this->Photo->save($data);						
-						}
-					}
-
-				}
-			//}
-
-			$this->Session->setFlash('Fotos cadastradas com sucesso.','flash_success');
-
-			# Verifica se alguma imagem foi inválida
-			if( count($errors) > 0 )
-			{
-				$message = '';
-
-				foreach ($errors as $error) 
-				{
-					$message .= 'A imagem <strong>'.$error.'</strong> deve ter pelo menos '.Configure::read('Gerenciador.photo_thumbnail_size.0').'x'.Configure::read('Gerenciador.photo_thumbnail_size.1').'pixels. Upload cancelado.<br/>';
-				}
-
-				$this->Session->setFlash($message,'flash_fail');
+/**
+ * add method
+ *
+ * @return void
+ */
+	public function add() {
+		if ($this->request->is('post')) {
+			$this->Photo->create();
+			if ($this->Photo->save($this->request->data)) {
+				$this->Session->setFlash(__('The photo has been saved'), 'flash/success');
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The photo could not be saved. Please, try again.'), 'flash/error');
 			}
+		}
+	}
 
+/**
+ * edit method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function edit($id = null) {
+		if (!$this->Photo->exists($id)) {
+			throw new NotFoundException(__('Invalid photo'));
+		}
+		if ($this->request->is('post') || $this->request->is('put')) {
+			if ($this->Photo->save($this->request->data)) {
+				$this->Session->setFlash(__('The photo has been saved'), 'flash/success');
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The photo could not be saved. Please, try again.'), 'flash/error');
+			}
+		} else {
+			$options = array('conditions' => array('Photo.' . $this->Photo->primaryKey => $id));
+			$this->request->data = $this->Photo->find('first', $options);
+		}
+	}
+
+/**
+ * delete method
+ *
+ * @throws NotFoundException
+ * @throws MethodNotAllowedException
+ * @param string $id
+ * @return void
+ */
+	public function delete($id = null) {
+		$this->Photo->id = $id;
+		if (!$this->Photo->exists()) {
+			throw new NotFoundException(__('Invalid photo'));
+		}
+		$this->request->onlyAllow('post', 'delete');
+		if ($this->Photo->delete()) {
+			$this->Session->setFlash(__('Photo deleted'), 'flash/success');
 			$this->redirect(array('action' => 'index'));
 		}
-	}
-
-
-	public function delete($id = null)
-	{
-		$this->layout = 'Gerenciador.default';
-		$this->Photo->id = $id;
-
-		if (!$this->Photo->exists()) 
-		{
-			throw new NotFoundException('Foto inválida');
-		}
-
-		$foto = $this->Photo->read(null);
-
-		unlink(WWW_ROOT.$foto['Photo']['photo']);
-		unlink(WWW_ROOT.$foto['Photo']['thumbnail']);
-
-		$this->Photo->delete();
-
-		$this->Session->setFlash('Foto removida com sucesso','flash_success');
+		$this->Session->setFlash(__('Photo was not deleted'), 'flash/error');
 		$this->redirect(array('action' => 'index'));
 	}
-
-
-	public function delete_all()
-	{
-		$this->layout = 'Gerenciador.default';
-		if ($this->request->is('post')) 
-		{
-			$photos = explode(",",$_POST['photos']);
-
-			foreach ($photos as $photo) 
-			{
-				$this->Photo->id = $photo;
-
-				$foto = $this->Photo->read(null);
-
-				unlink(WWW_ROOT.$foto['Photo']['photo']);
-				unlink(WWW_ROOT.$foto['Photo']['thumbnail']);
-
-				$this->Photo->delete();
-			}
-		}
-
-		$this->layout = '';
-	}
-
-
-	public function sort()
-	{
-		$this->layout = 'Gerenciador.default';
-		if ($this->request->is('post')) 
-		{
-			$ordem = explode(",",$_POST['ordem']);
-			$i = 1;
-			foreach ($ordem as $photo) {
-				$this->Photo->read(null,$photo);
-				$this->Photo->set('ordem',$i);
-				$this->Photo->save();
-				$i++;
-			}
-		}
-
-		$this->layout = '';
-	}
-
 }
-?>

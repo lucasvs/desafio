@@ -1053,3 +1053,48 @@ Request URL: /js/.lib/modernizr.js
 Stack Trace:
 #0 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-09-29 19:16:59 Error: [MissingControllerException] Controller class PhpmyController could not be found.
+Exception Attributes: array (
+  'class' => 'PhpmyController',
+  'plugin' => NULL,
+)
+Request URL: /phpmy
+Stack Trace:
+#0 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 19:17:04 Error: [MissingControllerException] Controller class PhpmyadminController could not be found.
+Exception Attributes: array (
+  'class' => 'PhpmyadminController',
+  'plugin' => NULL,
+)
+Request URL: /phpmyadmin
+Stack Trace:
+#0 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 19:18:07 Error: [MissingControllerException] Controller class PhpmyadminController could not be found.
+Exception Attributes: array (
+  'class' => 'PhpmyadminController',
+  'plugin' => NULL,
+)
+Request URL: /phpmyadmin
+Stack Trace:
+#0 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 19:18:09 Error: [MissingControllerException] Controller class PhpmyadminController could not be found.
+Exception Attributes: array (
+  'class' => 'PhpmyadminController',
+  'plugin' => NULL,
+)
+Request URL: /phpmyadmin
+Stack Trace:
+#0 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 19:20:18 Error: [MissingControllerException] Controller class PhpmyadminController could not be found.
+Exception Attributes: array (
+  'class' => 'PhpmyadminController',
+  'plugin' => NULL,
+)
+Request URL: /phpmyadmin/index.php?token=1aface50c798d64abba24feef26f3909
+Stack Trace:
+#0 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

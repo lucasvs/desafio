@@ -6,6 +6,7 @@
 		<div class="actions">
 		
 			<ul class="nav nav-list bs-docs-sidenav">
+										<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Photo.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('Photo.id'))); ?></li>
 										<li><?php echo $this->Html->link(__('List Photos'), array('action' => 'index')); ?></li>
 							</ul><!-- .nav nav-list bs-docs-sidenav -->
 		
@@ -19,8 +20,15 @@
 		
 			<?php echo $this->Form->create('Photo', array('inputDefaults' => array('label' => false), 'class' => 'form form-horizontal')); ?>
 				<fieldset>
-					<h2><?php echo __('Add Photo'); ?></h2>
+					<h2><?php echo __('Edit Photo'); ?></h2>
 			<div class="control-group">
+	<?php echo $this->Form->label('id', 'id', array('class' => 'control-label'));?>
+	<div class="controls">
+		<?php echo $this->Form->input('id', array('class' => 'span12')); ?>
+	</div><!-- .controls -->
+</div><!-- .control-group -->
+
+<div class="control-group">
 	<?php echo $this->Form->label('nome', 'nome', array('class' => 'control-label'));?>
 	<div class="controls">
 		<?php echo $this->Form->input('nome', array('class' => 'span12')); ?>
