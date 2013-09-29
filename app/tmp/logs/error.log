@@ -1044,3 +1044,12 @@ Request URL: /js/.lib/modernizr.js
 Stack Trace:
 #0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-09-29 15:46:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

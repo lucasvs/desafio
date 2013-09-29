@@ -41,10 +41,10 @@ class ConcursosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Concurso->create();
 			if ($this->Concurso->save($this->request->data)) {
-				$this->Session->setFlash(__('The concurso has been saved'));
+				$this->Session->setFlash(__('The concurso has been saved'), 'flash/success');
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The concurso could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The concurso could not be saved. Please, try again.'), 'flash/error');
 			}
 		}
 	}
@@ -62,10 +62,10 @@ class ConcursosController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Concurso->save($this->request->data)) {
-				$this->Session->setFlash(__('The concurso has been saved'));
+				$this->Session->setFlash(__('The concurso has been saved'), 'flash/success');
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The concurso could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The concurso could not be saved. Please, try again.'), 'flash/error');
 			}
 		} else {
 			$options = array('conditions' => array('Concurso.' . $this->Concurso->primaryKey => $id));
@@ -77,6 +77,7 @@ class ConcursosController extends AppController {
  * delete method
  *
  * @throws NotFoundException
+ * @throws MethodNotAllowedException
  * @param string $id
  * @return void
  */
@@ -87,10 +88,10 @@ class ConcursosController extends AppController {
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Concurso->delete()) {
-			$this->Session->setFlash(__('Concurso deleted'));
+			$this->Session->setFlash(__('Concurso deleted'), 'flash/success');
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Concurso was not deleted'));
+		$this->Session->setFlash(__('Concurso was not deleted'), 'flash/error');
 		$this->redirect(array('action' => 'index'));
 	}
 }
