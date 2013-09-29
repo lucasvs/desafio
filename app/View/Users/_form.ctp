@@ -36,7 +36,7 @@
           array(
             'type' => 'email',
             'class' => 'form-control',
-            'placeholder' => __('Email'),
+            'placeholder' => __('E-mail'),
             'value' => !empty( $user['User']['email'] ) ? $user['User']['email'] : ''
           )
         );
@@ -48,7 +48,7 @@
           array(
             'type' => 'password',
             'class' => 'form-control',
-            'placeholder' => __('Password'),
+            'placeholder' => __('Senha'),
             'value' => false
           )
         );
