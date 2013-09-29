@@ -1,30 +1,30 @@
 <?php
-class PhotosController extends GerenciadorAppController
+class PhotosController extends AppController
 {
 	function beforeFilter(){     
              parent::beforeFilter();    
 }
-	public $uses = array('Gerenciador.Photo','Gerenciador.Product');
-	public $components = array('Gerenciador.Arquivo');
 
 	public function index()
 	{
+			$this->layout = 'Gerenciador.default';
 		$this->set('photos',$this->Photo->find('all',array(
 			'ordem' => array('Photo.ordem'))));
 	}
 
 	public function add()
 	{
+	$this->layout = 'Gerenciador.default';
 		if(!empty($_FILES))
 		{
 			$errors = array();
 
 			// Organiza o array de multiple upload
-			$files = $this->Arquivo->MultipleFiles( $_FILES['multipleFiles'] );
+			$file = $this->data['Photo']['photo'];
 			
 			// Abre cada array de arquivos
-			foreach($files as $file) 
-			{
+			//foreach($files as $file) 
+		//	{
 				// Caso o arquivo seja válido
 				if( $file['error'] == 0 )
 				{
@@ -66,7 +66,7 @@ class PhotosController extends GerenciadorAppController
 					}
 
 				}
-			}
+			//}
 
 			$this->Session->setFlash('Fotos cadastradas com sucesso.','flash_success');
 
@@ -90,6 +90,7 @@ class PhotosController extends GerenciadorAppController
 
 	public function delete($id = null)
 	{
+		$this->layout = 'Gerenciador.default';
 		$this->Photo->id = $id;
 
 		if (!$this->Photo->exists()) 
@@ -111,6 +112,7 @@ class PhotosController extends GerenciadorAppController
 
 	public function delete_all()
 	{
+		$this->layout = 'Gerenciador.default';
 		if ($this->request->is('post')) 
 		{
 			$photos = explode(",",$_POST['photos']);
@@ -134,6 +136,7 @@ class PhotosController extends GerenciadorAppController
 
 	public function sort()
 	{
+		$this->layout = 'Gerenciador.default';
 		if ($this->request->is('post')) 
 		{
 			$ordem = explode(",",$_POST['ordem']);

@@ -33,8 +33,9 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller
 {
-  public $components = array('Auth','Session','Error','Cookie');
-  public $uses = array('User');
+  public $components = array('Auth','Session','Error','Cookie','Gerenciador.Arquivo');
+  public $uses = array('User','Gerenciador.Photo','Gerenciador.Product');
+
 
   public function beforeFilter()
   {
@@ -46,7 +47,7 @@ class AppController extends Controller
     $this->Auth->authenticate = array('Form');
 
     $this->Auth->loginRedirect = array('action' => 'index', 'controller' => 'pages');
-    $this->Auth->logoutRedirect = array('action' => 'login', 'controller' => 'users');
+   $this->Auth->logoutRedirect = array('action' => 'login', 'controller' => 'users');
     $this->Auth->authError = 'You are not allowed to see that.';
 
     # Login with Cookie

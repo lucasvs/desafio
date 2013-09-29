@@ -587,3 +587,460 @@ Stack Trace:
 #19 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #20 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #21 {main}
+2013-09-29 05:04:03 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'desafio\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Model.php(3221): ConnectionManager::getDataSource('default')
+#3 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Model.php(3243): Model->setSource('users')
+#5 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('User', 'fields')
+#8 C:\Users\Lucas\Documents\GitHub\desafio\app\View\Elements\form_login.ctp(20): FormHelper->create('User', Array)
+#9 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(945): include('C:\Users\Lucas\...')
+#10 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Lucas\...', Array)
+#11 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(1208): View->_render('C:\Users\Lucas\...', Array)
+#12 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Lucas\...', Array, Array)
+#13 C:\Users\Lucas\Documents\GitHub\desafio\app\View\Users\login.ctp(2): View->element('form_login')
+#14 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(945): include('C:\Users\Lucas\...')
+#15 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Lucas\...', Array)
+#16 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(471): View->_render('C:\Users\Lucas\...')
+#17 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#18 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#19 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#20 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#21 {main}
+2013-09-29 05:07:12 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'desafio\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Model.php(3221): ConnectionManager::getDataSource('default')
+#3 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Model.php(3243): Model->setSource('users')
+#5 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('User', 'fields')
+#8 C:\Users\Lucas\Documents\GitHub\desafio\app\View\Elements\form_login.ctp(20): FormHelper->create('User', Array)
+#9 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(945): include('C:\Users\Lucas\...')
+#10 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Lucas\...', Array)
+#11 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(1208): View->_render('C:\Users\Lucas\...', Array)
+#12 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Lucas\...', Array, Array)
+#13 C:\Users\Lucas\Documents\GitHub\desafio\app\View\Users\login.ctp(2): View->element('form_login')
+#14 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(945): include('C:\Users\Lucas\...')
+#15 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Lucas\...', Array)
+#16 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(471): View->_render('C:\Users\Lucas\...')
+#17 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#18 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#19 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#20 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#21 {main}
+2013-09-29 05:08:31 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'desafio\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Datasource\DboSource.php(262): Mysql->connect()
+#1 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\ConnectionManager.php(107): DboSource->__construct(Array)
+#2 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Model.php(3221): ConnectionManager::getDataSource('default')
+#3 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Model.php(1107): Model->setDataSource('default')
+#4 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Model.php(3243): Model->setSource('users')
+#5 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Model.php(1318): Model->getDataSource()
+#6 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\Helper\FormHelper.php(199): Model->schema()
+#7 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\Helper\FormHelper.php(453): FormHelper->_introspectModel('User', 'fields')
+#8 C:\Users\Lucas\Documents\GitHub\desafio\app\View\Elements\form_login.ctp(20): FormHelper->create('User', Array)
+#9 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(945): include('C:\Users\Lucas\...')
+#10 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Lucas\...', Array)
+#11 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(1208): View->_render('C:\Users\Lucas\...', Array)
+#12 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(414): View->_renderElement('C:\Users\Lucas\...', Array, Array)
+#13 C:\Users\Lucas\Documents\GitHub\desafio\app\View\Users\login.ctp(2): View->element('form_login')
+#14 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(945): include('C:\Users\Lucas\...')
+#15 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(907): View->_evaluate('C:\Users\Lucas\...', Array)
+#16 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\View\View.php(471): View->_render('C:\Users\Lucas\...')
+#17 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#18 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#19 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#20 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#21 {main}
+2013-09-29 16:25:17 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 16:25:21 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 16:25:24 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 16:31:19 Error: Fatal Error (4): syntax error, unexpected end of file, expecting function (T_FUNCTION) in [C:\Users\Lucas\Documents\GitHub\desafio\app\Controller\AppController.php, line 75]
+2013-09-29 16:31:19 Error: [FatalErrorException] syntax error, unexpected end of file, expecting function (T_FUNCTION)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Lucas\...', 75)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Lucas\...', 75, Array)
+#2 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Lucas\...', 75, Array)
+#3 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 16:31:29 Error: Fatal Error (4): syntax error, unexpected end of file, expecting function (T_FUNCTION) in [C:\Users\Lucas\Documents\GitHub\desafio\app\Controller\AppController.php, line 75]
+2013-09-29 16:31:29 Error: [FatalErrorException] syntax error, unexpected end of file, expecting function (T_FUNCTION)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Lucas\...', 75)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Lucas\...', 75, Array)
+#2 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Lucas\...', 75, Array)
+#3 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 16:31:30 Error: Fatal Error (4): syntax error, unexpected end of file, expecting function (T_FUNCTION) in [C:\Users\Lucas\Documents\GitHub\desafio\app\Controller\AppController.php, line 75]
+2013-09-29 16:31:30 Error: [FatalErrorException] syntax error, unexpected end of file, expecting function (T_FUNCTION)
+Request URL: /
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Lucas\...', 75)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Lucas\...', 75, Array)
+#2 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Lucas\...', 75, Array)
+#3 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 16:32:09 Error: Fatal Error (4): syntax error, unexpected end of file, expecting function (T_FUNCTION) in [C:\Users\Lucas\Documents\GitHub\desafio\app\Controller\AppController.php, line 79]
+2013-09-29 16:32:09 Error: [FatalErrorException] syntax error, unexpected end of file, expecting function (T_FUNCTION)
+Request URL: /users/login
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Lucas\...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Lucas\...', 79, Array)
+#2 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Lucas\...', 79, Array)
+#3 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 16:32:10 Error: Fatal Error (4): syntax error, unexpected end of file, expecting function (T_FUNCTION) in [C:\Users\Lucas\Documents\GitHub\desafio\app\Controller\AppController.php, line 79]
+2013-09-29 16:32:10 Error: [FatalErrorException] syntax error, unexpected end of file, expecting function (T_FUNCTION)
+Request URL: /users/login
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Lucas\...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Lucas\...', 79, Array)
+#2 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Lucas\...', 79, Array)
+#3 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 16:33:06 Error: [ForbiddenException] Você não tem permissão para executar esta ação.
+Request URL: /
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 16:39:28 Error: [MissingTableException] Table videos for model Video was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'videos',
+  'class' => 'Video',
+  'ds' => 'default',
+)
+Request URL: /gerenciador/videos
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Model.php(3243): Model->setSource('videos')
+#1 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Model\Model.php(2696): Model->getDataSource()
+#2 C:\Users\Lucas\Documents\GitHub\desafio\app\Plugin\Gerenciador\Controller\VideosController.php(6): Model->find('all')
+#3 [internal function]: VideosController->index()
+#4 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(VideosController), Array)
+#5 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(VideosController), Object(CakeRequest), Object(CakeResponse))
+#7 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-09-29 16:51:04 Error: [MissingControllerException] Controller class PhotosController could not be found.
+Exception Attributes: array (
+  'class' => 'PhotosController',
+  'plugin' => NULL,
+)
+Request URL: /photos
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 16:51:44 Error: Fatal Error (1): Class 'GerenciadorAppController' not found in [C:\Users\Lucas\Documents\GitHub\desafio\app\Controller\PhotosController.php, line 3]
+2013-09-29 16:51:44 Error: [FatalErrorException] Class 'GerenciadorAppController' not found
+Request URL: /photos
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Gerencia...', 'C:\Users\Lucas\...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Gerencia...', 'C:\Users\Lucas\...', 3, Array)
+#2 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Gerencia...', 'C:\Users\Lucas\...', 3, Array)
+#3 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 16:59:19 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [C:\Users\Lucas\Documents\GitHub\desafio\app\Controller\PhotosController.php, line 17]
+2013-09-29 16:59:19 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /photos
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Users\Lucas\...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Users\Lucas\...', 17, Array)
+#2 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Users\Lucas\...', 17, Array)
+#3 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 16:59:35 Error: Fatal Error (1): Call to undefined method PhotosController::layout() in [C:\Users\Lucas\Documents\GitHub\desafio\app\Controller\PhotosController.php, line 10]
+2013-09-29 16:59:35 Error: [FatalErrorException] Call to undefined method PhotosController::layout()
+Request URL: /photos
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Users\Lucas\...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Users\Lucas\...', 10, Array)
+#2 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Users\Lucas\...', 10, Array)
+#3 C:\Users\Lucas\Documents\GitHub\desafio\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 17:00:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:00:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:00:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:00:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:01:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:05:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:06:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:06:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:06:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:06:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:06:37 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:06:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:06:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:06:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:07:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:09:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:09:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:10:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:11:07 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:13:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:13:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:13:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:13:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:14:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 17:14:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/.lib/modernizr.js
+Stack Trace:
+#0 C:\Users\Lucas\Documents\GitHub\desafio\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
