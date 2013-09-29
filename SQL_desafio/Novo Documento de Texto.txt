@@ -1,3 +1,8 @@
+#crie um banco chamado desafio
+#crie um usuário "desafio" e senha "desafio" para acessar este banco
+
+CREATE DATABASE desafio;
+
 CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) NOT NULL,
