@@ -12,6 +12,14 @@ class ConcursosController extends AppController {
  *
  * @return void
  */
+
+    public function beforeFilter()
+    {
+        parent::beforeFilter();
+        $this->Auth->allow('parciais');
+
+    }
+
 	public function index() {
 		$this->Concurso->recursive = 0;
 		$this->set('concursos', $this->paginate());
@@ -94,4 +102,10 @@ class ConcursosController extends AppController {
 		$this->Session->setFlash(__('Concurso was not deleted'), 'flash/error');
 		$this->redirect(array('action' => 'index'));
 	}
+
+    public function parciais(){
+        $concursos = $this->Concurso->find('all',array('conditions'=>array('fim >=' => date('Y-m-d H:i:s'))));
+        $this->set(array('concursos'=>$concursos));
+    }
+
 }
