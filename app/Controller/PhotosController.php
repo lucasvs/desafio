@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
 App::uses('AppController', 'Controller');
 /**
  * Photos Controller
@@ -16,18 +15,6 @@ class PhotosController extends AppController {
 	public function index() {
 		$this->Photo->recursive = 0;
 		$this->set('photos', $this->paginate());
-=======
-class PhotosController extends AppController
-{
-	function beforeFilter(){     
-             parent::beforeFilter();    
-}
-
-	public function index()
-	{
-		$this->set('photos',$this->Photo->find('all',array(
-			'ordem' => array('Photo.ordem'))));
->>>>>>> e4e8a466de5e613e731914267f2c0e903cb0272b
 	}
 
 /**
@@ -60,6 +47,8 @@ class PhotosController extends AppController
 				$this->Session->setFlash(__('The photo could not be saved. Please, try again.'), 'flash/error');
 			}
 		}
+		$concursos = $this->Photo->Concurso->find('list');
+		$this->set(compact('concursos'));
 	}
 
 /**
@@ -84,6 +73,8 @@ class PhotosController extends AppController
 			$options = array('conditions' => array('Photo.' . $this->Photo->primaryKey => $id));
 			$this->request->data = $this->Photo->find('first', $options);
 		}
+		$concursos = $this->Photo->Concurso->find('list');
+		$this->set(compact('concursos'));
 	}
 
 /**

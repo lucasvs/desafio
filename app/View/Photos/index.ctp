@@ -6,7 +6,11 @@
 		<div class="actions">
 		
 			<ul class="nav nav-list bs-docs-sidenav">
-				<li><?php echo $this->Html->link(__('New Photo'), array('action' => 'add'), array('class' => '')); ?></li>							</ul><!-- .nav nav-list bs-docs-sidenav -->
+				<li><?php echo $this->Html->link(__('New Photo'), array('action' => 'add'), array('class' => '')); ?></li>						<li><?php echo $this->Html->link(__('List Concursos'), array('controller' => 'concursos', 'action' => 'index'), array('class' => '')); ?></li> 
+		<li><?php echo $this->Html->link(__('New Concurso'), array('controller' => 'concursos', 'action' => 'add'), array('class' => '')); ?></li> 
+		<li><?php echo $this->Html->link(__('List Polls'), array('controller' => 'polls', 'action' => 'index'), array('class' => '')); ?></li> 
+		<li><?php echo $this->Html->link(__('New Poll'), array('controller' => 'polls', 'action' => 'add'), array('class' => '')); ?></li> 
+			</ul><!-- .nav nav-list bs-docs-sidenav -->
 			
 		</div><!-- .actions -->
 		
@@ -36,7 +40,9 @@
 		<td><?php echo h($photo['Photo']['photo']); ?>&nbsp;</td>
 		<td><?php echo h($photo['Photo']['thumbnail']); ?>&nbsp;</td>
 		<td><?php echo h($photo['Photo']['ordem']); ?>&nbsp;</td>
-		<td><?php echo h($photo['Photo']['concurso_id']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($photo['Concurso']['id'], array('controller' => 'concursos', 'action' => 'view', $photo['Concurso']['id'])); ?>
+		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $photo['Photo']['id']), array('class' => 'btn btn-mini')); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $photo['Photo']['id']), array('class' => 'btn btn-mini')); ?>

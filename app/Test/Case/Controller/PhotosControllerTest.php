@@ -14,6 +14,8 @@ class PhotosControllerTest extends ControllerTestCase {
  */
 	public $fixtures = array(
 		'app.photo',
+		'app.concurso',
+		'app.poll',
 		'app.user',
 		'app.product'
 	);

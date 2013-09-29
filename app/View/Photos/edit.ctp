@@ -8,7 +8,11 @@
 			<ul class="nav nav-list bs-docs-sidenav">
 										<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Photo.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('Photo.id'))); ?></li>
 										<li><?php echo $this->Html->link(__('List Photos'), array('action' => 'index')); ?></li>
-							</ul><!-- .nav nav-list bs-docs-sidenav -->
+						<li><?php echo $this->Html->link(__('List Concursos'), array('controller' => 'concursos', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Concurso'), array('controller' => 'concursos', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Polls'), array('controller' => 'polls', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Poll'), array('controller' => 'polls', 'action' => 'add')); ?> </li>
+			</ul><!-- .nav nav-list bs-docs-sidenav -->
 		
 		</div><!-- .actions -->
 		
