@@ -1116,3 +1116,804 @@ Request URL: /phpmyadmin/main.php?token=1aface50c798d64abba24feef26f3909
 Stack Trace:
 #0 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-09-29 20:41:30 Error: [MissingControllerException] Controller class PollsController could not be found.
+Exception Attributes: array (
+  'class' => 'PollsController',
+  'plugin' => NULL,
+)
+Request URL: /desafio1/polls
+Stack Trace:
+#0 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 20:43:29 Error: [MissingControllerException] Controller class PollsController could not be found.
+Exception Attributes: array (
+  'class' => 'PollsController',
+  'plugin' => NULL,
+)
+Request URL: /desafio1/polls
+Stack Trace:
+#0 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 20:43:35 Error: [MissingControllerException] Controller class PollsController could not be found.
+Exception Attributes: array (
+  'class' => 'PollsController',
+  'plugin' => NULL,
+)
+Request URL: /desafio1/polls/ai
+Stack Trace:
+#0 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 20:43:40 Error: [MissingActionException] Action UsersController::ai() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'ai',
+)
+Request URL: /desafio1/users/ai
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:45:10 Error: [MissingActionException] Action UsersController::ai() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'ai',
+)
+Request URL: /desafio1/users/ai
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:45:23 Error: [MissingActionException] Action UsersController::ai() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'ai',
+)
+Request URL: /desafio1/users/ai
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:46:51 Error: [MissingActionException] Action UsersController::ai() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'ai',
+)
+Request URL: /desafio1/users/ai
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:46:51 Error: Fatal Error (1): Call to undefined method View::link() in [/var/www/desafio1/app/View/Errors/missing_action.ctp, line 2]
+2013-09-29 20:46:51 Error: [FatalErrorException] Call to undefined method View::link()
+Request URL: /desafio1/users/ai
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/desafi...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/desafi...', 2, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/desafi...', 2, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 20:47:37 Error: [MissingActionException] Action UsersController::ai() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'ai',
+)
+Request URL: /desafio1/users/ai
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:47:58 Error: [MissingActionException] Action UsersController::ai() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'ai',
+)
+Request URL: /desafio1/users/ai
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:48:04 Error: [MissingActionException] Action UsersController::ai() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'ai',
+)
+Request URL: /desafio1/users/ai
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:48:06 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /desafio1/users/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:49:59 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /desafio1/users/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:50:20 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /desafio1/users/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:50:30 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /desafio1/users/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:50:59 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /desafio1/users/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:51:33 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /desafio1/users/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:51:57 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /desafio1/users/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:52:50 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /desafio1/users/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:52:55 Error: [MissingActionException] Action UsersController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'home',
+)
+Request URL: /desafio1/users/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 20:56:12 Error: [MissingControllerException] Controller class SadfController could not be found.
+Exception Attributes: array (
+  'class' => 'SadfController',
+  'plugin' => NULL,
+)
+Request URL: /desafio1/sadf
+Stack Trace:
+#0 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 20:56:36 Error: [MissingControllerException] Controller class SadfController could not be found.
+Exception Attributes: array (
+  'class' => 'SadfController',
+  'plugin' => NULL,
+)
+Request URL: /desafio1/sadf
+Stack Trace:
+#0 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 21:04:53 Error: Fatal Error (1): Call to undefined method PagesController::uses() in [/var/www/desafio1/app/Controller/PagesController.php, line 74]
+2013-09-29 21:04:53 Error: [FatalErrorException] Call to undefined method PagesController::uses()
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/desafi...', 74)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/desafi...', 74, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/desafi...', 74, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:05:04 Error: Fatal Error (1): Call to undefined method PagesController::useModel() in [/var/www/desafio1/app/Controller/PagesController.php, line 74]
+2013-09-29 21:05:04 Error: [FatalErrorException] Call to undefined method PagesController::useModel()
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/desafi...', 74)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/desafi...', 74, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/desafi...', 74, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:05:32 Error: Fatal Error (64): Cannot redeclare PagesController::$uses in [/var/www/desafio1/app/Controller/PagesController.php, line 54]
+2013-09-29 21:05:32 Error: [FatalErrorException] Cannot redeclare PagesController::$uses
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/desafi...', 54)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/desafi...', 54, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/desafi...', 54, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:05:35 Error: Fatal Error (64): Cannot redeclare PagesController::$uses in [/var/www/desafio1/app/Controller/PagesController.php, line 54]
+2013-09-29 21:05:35 Error: [FatalErrorException] Cannot redeclare PagesController::$uses
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/desafi...', 54)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/desafi...', 54, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/desafi...', 54, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:08:23 Error: Fatal Error (64): Cannot redeclare PagesController::$uses in [/var/www/desafio1/app/Controller/PagesController.php, line 54]
+2013-09-29 21:08:23 Error: [FatalErrorException] Cannot redeclare PagesController::$uses
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/desafi...', 54)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/desafi...', 54, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/desafi...', 54, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:11:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivos' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivos', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivos', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivos', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivos', Array, Object(AppModel))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivos', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): AppModel->getAtivos()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:12:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivos' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivos', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivos', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivos', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivos', Array, Object(AppModel))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivos', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): AppModel->getAtivos()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:13:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivos' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivos', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivos', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivos', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivos', Array, Object(AppModel))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivos', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): AppModel->getAtivos()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:13:29 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivos' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivos', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivos', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivos', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivos', Array, Object(AppModel))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivos', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): AppModel->getAtivos()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:13:30 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivos' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivos', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivos', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivos', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivos', Array, Object(AppModel))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivos', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): AppModel->getAtivos()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:13:52 Error: Fatal Error (1): Call to a member function getAtivos() on a non-object in [/var/www/desafio1/app/Controller/PagesController.php, line 75]
+2013-09-29 21:13:52 Error: [FatalErrorException] Call to a member function getAtivos() on a non-object
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/desafi...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/desafi...', 75, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/desafi...', 75, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:14:01 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivos' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivos', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivos', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivos', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivos', Array, Object(AppModel))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivos', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): AppModel->getAtivos()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:14:23 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivos' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivos', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivos', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivos', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivos', Array, Object(AppModel))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivos', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): AppModel->getAtivos()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:14:24 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivos' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivos', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivos', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivos', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivos', Array, Object(AppModel))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivos', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): AppModel->getAtivos()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:15:14 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivos' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivos', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivos', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivos', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivos', Array, Object(AppModel))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivos', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): AppModel->getAtivos()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:15:15 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivos' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivos', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivos', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivos', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivos', Array, Object(AppModel))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivos', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): AppModel->getAtivos()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:15:18 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivos' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivos', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivos', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivos', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivos', Array, Object(AppModel))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivos', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): AppModel->getAtivos()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:15:21 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivos' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivos', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivos', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivos', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivos', Array, Object(AppModel))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivos', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): AppModel->getAtivos()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:15:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivos' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivos', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivos', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivos', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivos', Array, Object(AppModel))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivos', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): AppModel->getAtivos()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:15:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivos' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivos', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivos', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivos', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivos', Array, Object(AppModel))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivos', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): AppModel->getAtivos()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:16:23 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/desafio1/app/Controller/PagesController.php, line 75]
+2013-09-29 21:16:23 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/desafi...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/desafi...', 75, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/desafi...', 75, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:16:29 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/desafio1/app/Controller/PagesController.php, line 75]
+2013-09-29 21:16:29 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/desafi...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/desafi...', 75, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/desafi...', 75, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:16:30 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/desafio1/app/Controller/PagesController.php, line 75]
+2013-09-29 21:16:30 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/desafi...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/desafi...', 75, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/desafi...', 75, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:16:34 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/desafio1/app/Controller/PagesController.php, line 75]
+2013-09-29 21:16:34 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/desafi...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/desafi...', 75, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/desafi...', 75, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:17:30 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/desafio1/app/Controller/PagesController.php, line 75]
+2013-09-29 21:17:30 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/desafi...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/desafi...', 75, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/desafi...', 75, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:17:31 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/desafio1/app/Controller/PagesController.php, line 75]
+2013-09-29 21:17:31 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/desafi...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/desafi...', 75, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/desafi...', 75, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:18:48 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivas' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivas', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivas', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivas', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivas', Array, Object(Concurso))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivas', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): Concurso->getAtivas()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:19:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivas' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivas', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivas', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivas', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivas', Array, Object(Concurso))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivas', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): Concurso->getAtivas()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:20:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivas' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivas', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivas', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivas', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivas', Array, Object(Concurso))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivas', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): Concurso->getAtivas()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:20:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivas' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivas', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivas', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivas', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivas', Array, Object(Concurso))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivas', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): Concurso->getAtivas()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:20:41 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivas' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivas', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivas', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivas', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivas', Array, Object(Concurso))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivas', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): Concurso->getAtivas()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:22:02 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getAtivas' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getAtivas', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getAtivas', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getAtivas', Array, Array)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(799): DboSource->query('getAtivas', Array, Object(Concurso))
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->__call('getAtivas', Array)
+#6 /var/www/desafio1/app/Controller/PagesController.php(75): Concurso->getAtivas()
+#7 [internal function]: PagesController->index()
+#8 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-09-29 21:24:55 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fim<=' in 'where clause'
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Concurs...', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Concurs...', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Concurs...', false)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(2696): DboSource->read(Object(Concurso), Array)
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->find('all', Array)
+#6 [internal function]: PagesController->index()
+#7 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#8 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-29 21:25:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '21:25:09' at line 1
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Concurs...', Array)
+#2 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Concurs...', Array, Array)
+#3 /var/www/desafio1/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Concurs...', false)
+#4 /var/www/desafio1/lib/Cake/Model/Model.php(2696): DboSource->read(Object(Concurso), Array)
+#5 /var/www/desafio1/app/Controller/PagesController.php(75): Model->find('all', Array)
+#6 [internal function]: PagesController->index()
+#7 /var/www/desafio1/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#8 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/desafio1/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/desafio1/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-29 21:39:28 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/desafio1/app/View/Pages/index.ctp, line 17]
+2013-09-29 21:39:28 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 17, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 17, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:39:35 Error: Fatal Error (1): Call to undefined method View::link() in [/var/www/desafio1/app/View/Pages/index.ctp, line 17]
+2013-09-29 21:39:35 Error: [FatalErrorException] Call to undefined method View::link()
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/desafi...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/desafi...', 17, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/desafi...', 17, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:39:45 Error: Fatal Error (1): Call to undefined method View::link() in [/var/www/desafio1/app/View/Pages/index.ctp, line 17]
+2013-09-29 21:39:45 Error: [FatalErrorException] Call to undefined method View::link()
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/desafi...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/desafi...', 17, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/desafi...', 17, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:39:49 Error: Fatal Error (1): Call to undefined method View::link() in [/var/www/desafio1/app/View/Pages/index.ctp, line 17]
+2013-09-29 21:39:49 Error: [FatalErrorException] Call to undefined method View::link()
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/desafi...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/desafi...', 17, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/desafi...', 17, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:40:27 Error: Fatal Error (1): Call to undefined method View::link() in [/var/www/desafio1/app/View/Pages/index.ctp, line 17]
+2013-09-29 21:40:27 Error: [FatalErrorException] Call to undefined method View::link()
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/desafi...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/desafi...', 17, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/desafi...', 17, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:40:33 Error: Fatal Error (1): Call to undefined method View::link() in [/var/www/desafio1/app/View/Pages/index.ctp, line 17]
+2013-09-29 21:40:33 Error: [FatalErrorException] Call to undefined method View::link()
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/desafi...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/desafi...', 17, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/desafi...', 17, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:42:11 Error: Fatal Error (64): Cannot redeclare PagesController::$helpers in [/var/www/desafio1/app/Controller/PagesController.php, line 55]
+2013-09-29 21:42:11 Error: [FatalErrorException] Cannot redeclare PagesController::$helpers
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/desafi...', 55)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/desafi...', 55, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/desafi...', 55, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:42:35 Error: Fatal Error (64): Cannot redeclare PagesController::$helpers in [/var/www/desafio1/app/Controller/PagesController.php, line 57]
+2013-09-29 21:42:35 Error: [FatalErrorException] Cannot redeclare PagesController::$helpers
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/desafi...', 57)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/desafi...', 57, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/desafi...', 57, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:42:36 Error: Fatal Error (64): Cannot redeclare PagesController::$helpers in [/var/www/desafio1/app/Controller/PagesController.php, line 57]
+2013-09-29 21:42:36 Error: [FatalErrorException] Cannot redeclare PagesController::$helpers
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/desafi...', 57)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/desafi...', 57, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/desafi...', 57, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:42:46 Error: Fatal Error (1): Call to undefined method View::link() in [/var/www/desafio1/app/View/Pages/index.ctp, line 17]
+2013-09-29 21:42:46 Error: [FatalErrorException] Call to undefined method View::link()
+Request URL: /desafio1/home
+Stack Trace:
+#0 /var/www/desafio1/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/desafi...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/desafi...', 17, Array)
+#2 /var/www/desafio1/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/desafi...', 17, Array)
+#3 /var/www/desafio1/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

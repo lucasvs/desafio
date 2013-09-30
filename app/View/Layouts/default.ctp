@@ -68,7 +68,7 @@
                         <?php echo $this->Html->link('Usuários', '/users') ?>
                     </li>
                     <li class="<?php echo $this->params->controller == 'concursos' ? 'active' : ''; ?>">
-                        <?php echo $this->Html->link('Concursos', array('controller' => 'concursos')) ?>
+                        <?php echo $this->Html->link('Concursos', array('controller' => 'concursos', 'action'=>'index')) ?>
                     </li>
                 <?php } ?>
                 <?php if (!AuthComponent::user('id')) { ?>

@@ -21,6 +21,7 @@
 
 App::uses('AppController', 'Controller');
 
+
 /**
  * Static content controller
  *
@@ -50,7 +51,8 @@ class PagesController extends AppController {
  *
  * @var array
  */
-	public $uses = array();
+	public $uses = array('');
+
 
 	public function beforeFilter()
 	{
@@ -70,5 +72,9 @@ class PagesController extends AppController {
 
 	public function index()
 	{
+        $this->loadModel('Concurso');
+        $agora = date('Y-m-d H:i:m');
+        $this->set('concursos',$this->Concurso->find('all',array('conditions'=>array("fim >'$agora' ")))[0]);
+
 	}
 }
