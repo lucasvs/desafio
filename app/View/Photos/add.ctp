@@ -1,70 +1,51 @@
+<?php echo $this->element('breadcrumb',array('links' => array(
+	array(
+		'link' => '/gerenciador/photos',
+		'label' => 'Fotos'
+	),
+	array(
+		'label' => 'Adicionar fotos'
+	)
+))) ?>
 
-<div id="page-container" class="row-fluid">
+<h2>Adicionar fotos </h2>
+<hr>
 
-	<div id="sidebar" class="span3">
-		
-		<div class="actions">
-		
-			<ul class="nav nav-list bs-docs-sidenav">
-										<li><?php echo $this->Html->link(__('List Photos'), array('action' => 'index')); ?></li>
-						<li><?php echo $this->Html->link(__('List Concursos'), array('controller' => 'concursos', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Concurso'), array('controller' => 'concursos', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Polls'), array('controller' => 'polls', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Poll'), array('controller' => 'polls', 'action' => 'add')); ?> </li>
-			</ul><!-- .nav nav-list bs-docs-sidenav -->
-		
-		</div><!-- .actions -->
-		
-	</div><!-- #sidebar .span3 -->
-	
-	<div id="page-content" class="span9">
+<div class="row-fluid">
+	<div class="span12">
+		<?php  
+		echo $this->Form->create
+		(
+			'Photo',
+			array
+			(
+				'type' => 'file',
+				'url' => array
+				(
+					
+					'controller' 	=> 'photos',
+					'action'	 	=> $this->params->action,
+					!empty($this->params->pass[0]) ? $this->params->pass[0] : ''
+				),
+				'class'			=> 'well',
+				'inputDefaults' => array
+				(
+					'label' => false,
+					'error' => false
+				)
+			)
+		); 
+		echo $this->Form->input('photo', array('type'=> 'file'));
+		?>
+		 
+		<hr>
+		<?php  
+		$options = array(
+		    'label' => 'Fazer upload',
+		    'class' => 'btn btn-primary'
+		);
+		echo $this->Form->end($options);
+		?>
 
-		<div class="photos form">
-		
-			<?php echo $this->Form->create('Photo', array('inputDefaults' => array('label' => false), 'class' => 'form form-horizontal')); ?>
-				<fieldset>
-					<h2><?php echo __('Add Photo'); ?></h2>
-			<div class="control-group">
-	<?php echo $this->Form->label('nome', 'nome', array('class' => 'control-label'));?>
-	<div class="controls">
-		<?php echo $this->Form->input('nome', array('class' => 'span12')); ?>
-	</div><!-- .controls -->
-</div><!-- .control-group -->
-
-<div class="control-group">
-	<?php echo $this->Form->label('photo', 'photo', array('class' => 'control-label'));?>
-	<div class="controls">
-		<?php echo $this->Form->input('photo', array('class' => 'span12')); ?>
-	</div><!-- .controls -->
-</div><!-- .control-group -->
-
-<div class="control-group">
-	<?php echo $this->Form->label('thumbnail', 'thumbnail', array('class' => 'control-label'));?>
-	<div class="controls">
-		<?php echo $this->Form->input('thumbnail', array('class' => 'span12')); ?>
-	</div><!-- .controls -->
-</div><!-- .control-group -->
-
-<div class="control-group">
-	<?php echo $this->Form->label('ordem', 'ordem', array('class' => 'control-label'));?>
-	<div class="controls">
-		<?php echo $this->Form->input('ordem', array('class' => 'span12')); ?>
-	</div><!-- .controls -->
-</div><!-- .control-group -->
-
-<div class="control-group">
-	<?php echo $this->Form->label('concurso_id', 'concurso_id', array('class' => 'control-label'));?>
-	<div class="controls">
-		<?php echo $this->Form->input('concurso_id', array('class' => 'span12')); ?>
-	</div><!-- .controls -->
-</div><!-- .control-group -->
-
-				</fieldset>
-			<?php echo $this->Form->submit('Submit', array('class' => 'btn btn-large btn-primary')); ?>
-<?php echo $this->Form->end(); ?>
-			
-		</div>
-			
-	</div><!-- #page-content .span9 -->
-
-</div><!-- #page-container .row-fluid -->
+	</div>	
+</div>

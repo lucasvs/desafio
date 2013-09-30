@@ -1116,3 +1116,114 @@ Request URL: /phpmyadmin/main.php?token=1aface50c798d64abba24feef26f3909
 Stack Trace:
 #0 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-09-29 21:22:37 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/desafio/app/Controller/PhotosController.php, line 101]
+2013-09-29 21:22:37 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /photos/add/1
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 101)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 101, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 101, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:23:08 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/var/www/desafio/app/Controller/PhotosController.php, line 101]
+2013-09-29 21:23:08 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /photos/add/
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 101)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 101, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 101, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 21:27:12 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`desafio`.`photos`, CONSTRAINT `photos_ibfk_1` FOREIGN KEY (`concurso_id`) REFERENCES `concursos` (`id`))
+Request URL: /photos/add/12
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `de...', Array)
+#2 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `de...')
+#3 /var/www/desafio/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Photo), Array, Array)
+#4 /var/www/desafio/app/Controller/PhotosController.php(87): Model->save(Array)
+#5 [internal function]: PhotosController->add('12')
+#6 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PhotosController), Array)
+#7 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PhotosController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-29 21:28:33 Error: [NotFoundException] Concurso não existe
+Request URL: /photos/add/12
+Stack Trace:
+#0 [internal function]: PhotosController->add('12')
+#1 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PhotosController), Array)
+#2 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PhotosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 21:29:08 Error: [MissingControllerException] Controller class PhpmyadminController could not be found.
+Exception Attributes: array (
+  'class' => 'PhpmyadminController',
+  'plugin' => NULL,
+)
+Request URL: /phpmyadmin/sql.php?db=desafio&token=def884085af98744d5644e6be0e2e767&table=photos&pos=0
+Stack Trace:
+#0 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 21:36:10 Error: [MissingControllerException] Controller class PhpmyadminController could not be found.
+Exception Attributes: array (
+  'class' => 'PhpmyadminController',
+  'plugin' => NULL,
+)
+Request URL: /phpmyadmin/main.php?token=def884085af98744d5644e6be0e2e767
+Stack Trace:
+#0 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 21:36:11 Error: [MissingControllerException] Controller class PhpmyadminController could not be found.
+Exception Attributes: array (
+  'class' => 'PhpmyadminController',
+  'plugin' => NULL,
+)
+Request URL: /phpmyadmin/sql.php?db=desafio&token=def884085af98744d5644e6be0e2e767&table=photos&pos=0
+Stack Trace:
+#0 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 21:38:40 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2' for key 'user_id'
+Request URL: /photos/add/1
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `de...', Array)
+#2 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `de...')
+#3 /var/www/desafio/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Photo), Array, Array)
+#4 /var/www/desafio/app/Controller/PhotosController.php(92): Model->save(Array)
+#5 [internal function]: PhotosController->add('1')
+#6 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PhotosController), Array)
+#7 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PhotosController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-29 21:58:57 Error: [MissingControllerException] Controller class USERSController could not be found.
+Exception Attributes: array (
+  'class' => 'USERSController',
+  'plugin' => NULL,
+)
+Request URL: /USERS
+Stack Trace:
+#0 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 21:59:01 Error: [ForbiddenException] Você não tem permissão para executar esta ação.
+Request URL: /users
+Stack Trace:
+#0 [internal function]: UsersController->index()
+#1 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 22:00:09 Error: [ForbiddenException] Você não tem permissão para executar esta ação.
+Request URL: /photos
+Stack Trace:
+#0 [internal function]: PhotosController->index()
+#1 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PhotosController), Array)
+#2 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PhotosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
