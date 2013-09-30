@@ -46,7 +46,7 @@ class UsersController extends AppController
         }
 
         # Redirect to home
-        $this->redirect($this->Auth->redirect());
+        $this->redirect(array('controller'=>'home'));
       }
       else
       {

@@ -7,26 +7,30 @@
 
     <div>
         <ol>
-        <?php
-            foreach( $concursos as $row ){
-                if( isset($row['titulo'] ) ){
-                ?>
+            <?php
+            foreach ($concursos as $row){
+            if (isset($row['titulo'])){
+            ?>
 
-        <li>
-            <h4><?=$row['titulo']; ?>
-                <div class="pull-right">
-            <span class="glyphicon glyphicon-thumbs-up"></span> <?=$this->Html->link('participar',array('controller'=>'photo','action'=>'add',$row['id'])); ?></h4>
-            </div>
-        </li>
-
-        <?php
-                }
-            }
-        ?>
-            </ol>
+            <li>
+                <h4><?= $row['titulo']; ?>
+                    <div class="pull-right">
+                        <?= $this->Html->link(
+                                $this->Html->tag('button',
+                                    $this->Html->tag('span',null,array('class'=>'glyphicon glyphicon-thumbs-up')).' Participar',
+                                    array('class'=>'btn btn-info')),
+                            array('controller' => 'photos', 'action' => 'add', $row['id']),
+                            array('escape'=>false)); ?>
+                </h4>
     </div>
+    </li>
 
-
+    <?php
+    }
+    }
+    ?>
+    </ol>
+</div>
 
 
 </div>

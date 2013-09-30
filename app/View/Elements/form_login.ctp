@@ -24,12 +24,12 @@
 
 		<hr>
 		  <div class="form-group">
-		    <label for="exampleInputEmail1">Email</label>
+		    <label for="exampleInputEmail1">E-mail</label>
 		    <input type="email" class="form-control" id="exampleInputEmail1" name="data[User][username]" placeholder="Email">
 		  </div>
 		  <div class="form-group">
-		    <label for="exampleInputPassword1">Password</label>
-		    <input type="password" class="form-control" id="exampleInputPassword1" name="data[User][password]" placeholder="Password">
+		    <label for="exampleInputPassword1">Senha</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" name="data[User][password]" placeholder="Senha">
 		  </div>
 		  <div class="form-group">
 		  	<?php echo $this->Html->link(__('Forgot your password?'),array('controller' => 'users','action' => 'remember_password')) ?>
