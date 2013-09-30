@@ -166,16 +166,21 @@ public function delete($id = null) {
       		$this->Session->setFlash(__(''), 'flash/error');
 		$this->redirect(array('controller' => 'pages','action' => 'index'));
     }
-	$this->Photo->id = $id;
-	if (!$this->Photo->exists()) {
-		throw new NotFoundException(__('Invalid photo'));
-	}
-	$this->request->onlyAllow('post', 'delete');
-	if ($this->Photo->delete()) {
-		$this->Session->setFlash(__('Photo deleted'), 'flash/success');
+		$this->Photo->id = $id;
+
+		if (!$this->Photo->exists()) 
+		{
+			throw new NotFoundException('Foto inválida');
+		}
+
+		$foto = $this->Photo->read(null);
+
+		unlink(WWW_ROOT.$foto['Photo']['photo']);
+		unlink(WWW_ROOT.$foto['Photo']['thumbnail']);
+
+		$this->Photo->delete();
+
+		$this->Session->setFlash('Foto removida com sucesso','flash_success');
 		$this->redirect(array('action' => 'index'));
-	}
-	$this->Session->setFlash(__('Photo was not deleted'), 'flash/error');
-	$this->redirect(array('action' => 'index'));
 }
 }
