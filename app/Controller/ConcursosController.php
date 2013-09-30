@@ -122,8 +122,7 @@ class ConcursosController extends AppController
             and photos.concurso_id = concursos.id
             and concursos.fim >= CURRENT_TIME
             group by photo_id, concurso_id
-            order by votos desc
-            limit 4');
+            order by votos desc');
 
         $votos_photo = array();
 
@@ -133,23 +132,28 @@ class ConcursosController extends AppController
 
             if (!isset($votos_photo[$row['concursos']['id']]['total_votos']))
                 $votos_photo[$row['concursos']['id']]['total_votos'] = 0;
-            $votos_photo[ $row['concursos']['id'] ][ 'total_votos' ] += $row[0]['votos'];
-            $votos_photo[ $row['concursos']['id'] ][ 'titulo' ] = $row['concursos']['titulo'];
-            $votos_photo[ $row['concursos']['id'] ][ 'id' ] = $row['concursos']['id'];
-            $votos_photo[ $row['concursos']['id'] ][ 'fim' ] = $this->parseDate($row['concursos']['fim']);
+            $votos_photo[$row['concursos']['id']]['total_votos'] += $row[0]['votos'];
+            $votos_photo[$row['concursos']['id']]['titulo'] = $row['concursos']['titulo'];
+            $votos_photo[$row['concursos']['id']]['id'] = $row['concursos']['id'];
+            $votos_photo[$row['concursos']['id']]['fim'] = $this->parseDate($row['concursos']['fim']);
 
-            $votos_photo[$row['concursos']['id']]['photos'][$row['photos']['id']] = array(
-                'votos' => $row[0]['votos'],
-                'nome' => $row['photos']['nome'],
-                'photo' => $row['photos']['photo']
-            );
+            if( !isset( $votos_photo[$row['concursos']['id']]['photos'] ) )
+                $votos_photo[$row['concursos']['id']]['photos'] = array();
+
+            if (count($votos_photo[$row['concursos']['id']]['photos']) < 3) {
+                $votos_photo[$row['concursos']['id']]['photos'][$row['photos']['id']] = array(
+                    'votos' => $row[0]['votos'],
+                    'nome' => $row['photos']['nome'],
+                    'photo' => $row['photos']['photo']
+                );
+            }
         }
 
         //transformando contagem em porcentagem
-        foreach( $votos_photo as $key => $row ){
+        foreach ($votos_photo as $key => $row) {
             $total = $row['total_votos'];
-            foreach( $row['photos'] as $key1 => $row1 ){
-                $votos_photo[ $key ]['photos'][ $key1 ]['votos_porc'] = round( ( $row1['votos'] / $total ) * 100, 1);
+            foreach ($row['photos'] as $key1 => $row1) {
+                $votos_photo[$key]['photos'][$key1]['votos_porc'] = round(($row1['votos'] / $total) * 100, 1);
             }
         }
 
