@@ -33,51 +33,79 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller
 {
-  public $components = array('Auth','Session','Error','Cookie','Gerenciador.Arquivo');
-  public $uses = array('User','Gerenciador.Photo','Gerenciador.Product');
+    public $components = array('Auth', 'Session', 'Error', 'Cookie', 'Gerenciador.Arquivo');
+    public $uses = array('User', 'Gerenciador.Photo', 'Gerenciador.Product');
 
 
-  public function beforeFilter()
-  {
-
-    $this->Cookie->time = '30 Days';  // or '1 hour'
-    $this->Cookie->key = 'AS()XA(S*D)AS8dA(Sd80A(SDA*SDAS%D4$AS#SD@ASDtyASGH)_AS0dAoIASNKAshgaFA$#S21d24a3s45dAS$3d#A@$SDASCHVASCa4s33%$ˆ$%$#s253$AS5#Â$%s645$#AS@%#AˆS6%A&*SÂ%S$';
-    $this->Cookie->httpOnly = true;
-
-    $this->Auth->authenticate = array('Form');
-
-    $this->Auth->loginRedirect = array('action' => 'index', 'controller' => 'pages');
-   $this->Auth->logoutRedirect = array('action' => 'login', 'controller' => 'users');
-    $this->Auth->authError = 'You are not allowed to see that.';
-
-    # Login with Cookie
-    if(!$this->Auth->loggedIn() && $this->Cookie->check('Auth.User'))
+    public function beforeFilter()
     {
-      $cookie = $this->Cookie->read('Auth.User');
 
-      $user = $this->User->find('first', array(
-        'conditions' => array(
-          'User.username' => $cookie['username'],
-          'User.password' => $cookie['password']
-          )
-        )
-      );
+        $this->Cookie->time = '30 Days'; // or '1 hour'
+        $this->Cookie->key = 'AS()XA(S*D)AS8dA(Sd80A(SDA*SDAS%D4$AS#SD@ASDtyASGH)_AS0dAoIASNKAshgaFA$#S21d24a3s45dAS$3d#A@$SDASCHVASCa4s33%$ˆ$%$#s253$AS5#Â$%s645$#AS@%#AˆS6%A&*SÂ%S$';
+        $this->Cookie->httpOnly = true;
 
-      # Manually login the user
-      if( $this->Auth->login($user['User']) ){
-        $this->redirect('/home');
-      }
+        $this->Auth->authenticate = array('Form');
 
-      # Redirect to home if is logged in
-      if($this->Auth->loggedIn() && $this->params->controller == 'users' && $this->params->action == 'login')
-        $this->redirect('/home');
+        $this->Auth->loginRedirect = array('action' => 'index', 'controller' => 'pages');
+        $this->Auth->logoutRedirect = array('action' => 'login', 'controller' => 'users');
+        $this->Auth->authError = 'You are not allowed to see that.';
+
+        # Login with Cookie
+        if (!$this->Auth->loggedIn() && $this->Cookie->check('Auth.User')) {
+            $cookie = $this->Cookie->read('Auth.User');
+
+            $user = $this->User->find('first', array(
+                    'conditions' => array(
+                        'User.username' => $cookie['username'],
+                        'User.password' => $cookie['password']
+                    )
+                )
+            );
+
+            # Manually login the user
+            if ($this->Auth->login($user['User'])) {
+                $this->redirect('/home');
+            }
+
+            # Redirect to home if is logged in
+            if ($this->Auth->loggedIn() && $this->params->controller == 'users' && $this->params->action == 'login')
+                $this->redirect('/home');
+        }
+
+        # To enable portuguese language as main
+        # Configure::write('Config.language', 'por');
+
+
     }
 
-    # To enable portuguese language as main
-    # Configure::write('Config.language', 'por');
-	
-	 
-  }
+    public function parseDate($date, $outputFormat = 'd/m/Y')
+    {
+        $formats = array(
+            'd/m/Y',
+            'd/m/Y H',
+            'd/m/Y H:i',
+            'd/m/Y H:i:s',
+            'Y-m-d',
+            'Y-m-d H',
+            'Y-m-d H:i',
+            'Y-m-d H:i:s',
+        );
+
+        foreach ($formats as $format) {
+            $dateObj = DateTime::createFromFormat($format, $date);
+            if ($dateObj !== false) {
+                break;
+            }
+        }
+
+        if ($dateObj === false) {
+            throw new Exception('Invalid date:' . $date);
+        }
+
+        return $dateObj->format($outputFormat);
+    }
+
+
 }
 
 
