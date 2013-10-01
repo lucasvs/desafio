@@ -118,11 +118,12 @@ class ConcursosController extends AppController
         $this->loadModel('User');
 
         $votos = $this->Poll->query('SELECT count(polls.id) as votos, concursos.id, concursos.titulo, photos.id,
-            photos.nome,photos.thumbnail, photos.photo,photos.concurso_id, concursos.fim
-            FROM `polls`,photos,concursos
+            photos.nome,photos.thumbnail, photos.photo,photos.concurso_id, concursos.fim, users.username
+            FROM `polls`,photos,concursos, users
             WHERE polls.photo_id = photos.id
             and photos.concurso_id = concursos.id
             and concursos.fim >= CURRENT_DATE
+            and users.id = photos.user_id
             group by photo_id, photos.concurso_id
             order by votos desc');
 
@@ -148,7 +149,8 @@ class ConcursosController extends AppController
                     'id' => $row['photos']['id'],
                     'votos' => $row[0]['votos'],
                     'nome' => $row['photos']['nome'],
-                    'photo' => $row['photos']['photo']
+                    'photo' => $row['photos']['photo'],
+                    'autor' => $row['users']['username']
                 );
             }
         }
@@ -182,16 +184,17 @@ class ConcursosController extends AppController
 
         $users = $this->User->find('all');
         $all_users = array();
-        foreach( $users as $row ){
-            $all_users[ $row['User']['id'] ] = $row['User']['username'];
+        foreach ($users as $row) {
+            $all_users[$row['User']['id']] = $row['User']['username'];
         }
+
 
         foreach ($concursos as $concurso) {
 
             $votos_photo[$concurso['Concurso']['id']]['titulo'] = $concurso['Concurso']['titulo'];
             $votos_photo[$concurso['Concurso']['id']]['id'] = $concurso['Concurso']['id'];
             $votos_photo[$concurso['Concurso']['id']]['fim'] = $concurso['Concurso']['fim'];
-            $votos_photo[$concurso['Concurso']['id']]['photos'] = array();
+            // $votos_photo[$concurso['Concurso']['id']]['photos'] = array();
             foreach ($photos as $photo) {
                 if ($photo['Photo']['concurso_id'] == $concurso['Concurso']['id']) {
                     if (!isset($votos_photo[$concurso['Concurso']['id']]['photos'][$photo['Photo']['id']])) {
@@ -203,18 +206,14 @@ class ConcursosController extends AppController
                                 'votos' => 0,
                                 'nome' => $photo['Photo']['nome'],
                                 'photo' => $photo['Photo']['photo'],
-                                'autor' => $all_users[ $photo['Photo']['user_id'] ]
+                                'autor' => $all_users[$photo['Photo']['user_id']]
                             );
                         $votos_photo[$concurso['Concurso']['id']]['total_votos'] = 0;
                     }
                 }
             }
         }
-
-
         $this->set(array('concursos' => $votos_photo));
-
-
     }
 
 
@@ -332,8 +331,8 @@ class ConcursosController extends AppController
 
         $users = $this->User->find('all');
         $all_users = array();
-        foreach( $users as $row ){
-            $all_users[ $row['User']['id'] ] = $row['User']['username'];
+        foreach ($users as $row) {
+            $all_users[$row['User']['id']] = $row['User']['username'];
         }
 
         foreach ($concursos as $concurso) {
@@ -353,14 +352,13 @@ class ConcursosController extends AppController
                                 'votos' => 0,
                                 'nome' => $photo['Photo']['nome'],
                                 'photo' => $photo['Photo']['photo'],
-                                'autor' => $all_users[ $photo['Photo']['user_id'] ]
+                                'autor' => $all_users[$photo['Photo']['user_id']]
                             );
                         $votos_photo[$concurso['Concurso']['id']]['total_votos'] = 0;
                     }
                 }
             }
         }
-
 
         $this->set(array('concursos' => $votos_photo));
 
