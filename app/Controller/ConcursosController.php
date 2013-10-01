@@ -188,8 +188,9 @@ class ConcursosController extends AppController
             $votos_photo[$concurso['Concurso']['id']]['titulo'] = $concurso['Concurso']['titulo'];            
             $votos_photo[$concurso['Concurso']['id']]['id'] = $concurso['Concurso']['id'];
             $votos_photo[$concurso['Concurso']['id']]['fim'] = $concurso['Concurso']['fim'];
-           // $votos_photo[$concurso['Concurso']['id']]['photos'] = array();
+           $votos_photo[$concurso['Concurso']['id']]['photos'] = array();
             foreach($photos as $photo){
+                if ($photo['Photo']['concurso_id'] == $concurso['Concurso']['id']){
                 if(!isset($votos_photo[$concurso['Concurso']['id']]['photos'][$photo['Photo']['id']])){
                    $votos_photo[$concurso['Concurso']['id']]['photos'][$photo['Photo']['id']] =
                    array(
@@ -202,6 +203,7 @@ class ConcursosController extends AppController
                     );
                    $votos_photo[$concurso['Concurso']['id']]['total_votos'] = 0;
                }
+           }
            }
        }
 
@@ -224,7 +226,12 @@ class ConcursosController extends AppController
       $this->loadModel('Ra');
       $ras = $this->Ra->find('first',array('conditions' => array('Ra.ra' => $this->request->data['Poll']['ra'])));
       $count = $this->Poll->find('count',
-        array('condition' => array('Poll.concurso_id ' => $id_concurso,'Poll.ra_id' => $ras['Ra']['id'])));
+        array( 'conditions' => array(
+                'and' => array(
+                    array('Poll.concurso_id ' => $id_concurso,
+                      'Poll.ra_id' => $ras['Ra']['id']
+                      ),     
+                    ))));
       $this->request->data['Poll']['ra'] = null;
       $this->request->data['Poll']['concurso_id'] = $id_concurso;
       $this->request->data['Poll']['photo_id'] = $id;
@@ -327,6 +334,7 @@ class ConcursosController extends AppController
             $votos_photo[$concurso['Concurso']['id']]['fim'] = $concurso['Concurso']['fim'];
            // $votos_photo[$concurso['Concurso']['id']]['photos'] = array();
             foreach($photos as $photo){
+                if ($photo['Photo']['concurso_id'] == $concurso['Concurso']['id']){
                 if(!isset($votos_photo[$concurso['Concurso']['id']]['photos'][$photo['Photo']['id']])){
                    $votos_photo[$concurso['Concurso']['id']]['photos'][$photo['Photo']['id']] =
                    array(
@@ -340,6 +348,7 @@ class ConcursosController extends AppController
                    $votos_photo[$concurso['Concurso']['id']]['total_votos'] = 0;
                }
            }
+       }
        }
 
 
