@@ -2145,3 +2145,362 @@ Stack Trace:
 #1 /var/www/desafio2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
 #2 /var/www/desafio2/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2013-09-30 23:51:36 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/desafio/app/View/Concursos/parciais.ctp, line 15]
+2013-09-30 23:51:36 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 15, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 15, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 00:05:10 Error: [MissingActionException] Action ConcursosController::votar() could not be found.
+Exception Attributes: array (
+  'controller' => 'ConcursosController',
+  'action' => 'votar',
+)
+Request URL: /Concursos/votar/3
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-01 00:09:40 Error: Fatal Error (1): Call to a member function query() on a non-object in [/var/www/desafio/app/Controller/ConcursosController.php, line 118]
+2013-10-01 00:09:40 Error: [FatalErrorException] Call to a member function query() on a non-object
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/desafi...', 118)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/desafi...', 118, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/desafi...', 118, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 00:16:18 Error: [MissingActionException] Action ConcursosController::votar() could not be found.
+Exception Attributes: array (
+  'controller' => 'ConcursosController',
+  'action' => 'votar',
+)
+Request URL: /Concursos/votar/3
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-01 00:16:18 Error: [MissingActionException] Action ConcursosController::votar() could not be found.
+Exception Attributes: array (
+  'controller' => 'ConcursosController',
+  'action' => 'votar',
+)
+Request URL: /Concursos/votar/3
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-01 00:18:07 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`desafio`.`photos`, CONSTRAINT `photos_ibfk_1` FOREIGN KEY (`concurso_id`) REFERENCES `concursos` (`id`))
+Request URL: /concursos/delete/3
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('DELETE `Concurs...', Array)
+#2 /var/www/desafio/lib/Cake/Model/Datasource/Database/Mysql.php(422): DboSource->execute('DELETE `Concurs...')
+#3 /var/www/desafio/lib/Cake/Model/Model.php(2427): Mysql->delete(Object(Concurso), Array)
+#4 /var/www/desafio/app/Controller/ConcursosController.php(106): Model->delete()
+#5 [internal function]: ConcursosController->delete('3')
+#6 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ConcursosController), Array)
+#7 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-10-01 00:18:13 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`desafio`.`polls`, CONSTRAINT `polls_ibfk_1` FOREIGN KEY (`photo_id`) REFERENCES `concursos` (`id`))
+Request URL: /concursos/delete/1
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('DELETE `Concurs...', Array)
+#2 /var/www/desafio/lib/Cake/Model/Datasource/Database/Mysql.php(422): DboSource->execute('DELETE `Concurs...')
+#3 /var/www/desafio/lib/Cake/Model/Model.php(2427): Mysql->delete(Object(Concurso), Array)
+#4 /var/www/desafio/app/Controller/ConcursosController.php(106): Model->delete()
+#5 [internal function]: ConcursosController->delete('1')
+#6 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ConcursosController), Array)
+#7 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-10-01 00:18:28 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`desafio`.`photos`, CONSTRAINT `photos_ibfk_1` FOREIGN KEY (`concurso_id`) REFERENCES `concursos` (`id`))
+Request URL: /concursos/delete/3
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('DELETE `Concurs...', Array)
+#2 /var/www/desafio/lib/Cake/Model/Datasource/Database/Mysql.php(422): DboSource->execute('DELETE `Concurs...')
+#3 /var/www/desafio/lib/Cake/Model/Model.php(2427): Mysql->delete(Object(Concurso), Array)
+#4 /var/www/desafio/app/Controller/ConcursosController.php(106): Model->delete()
+#5 [internal function]: ConcursosController->delete('3')
+#6 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ConcursosController), Array)
+#7 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-10-01 00:49:48 Error: [MissingActionException] Action ConcursosController::votar() could not be found.
+Exception Attributes: array (
+  'controller' => 'ConcursosController',
+  'action' => 'votar',
+)
+Request URL: /Concursos/votar/4
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-01 01:09:21 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`desafio`.`polls`, CONSTRAINT `polls_ibfk_3` FOREIGN KEY (`photo_id`) REFERENCES `concursos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /Concursos/votar/2
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `de...', Array)
+#2 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `de...')
+#3 /var/www/desafio/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Poll), Array, Array)
+#4 /var/www/desafio/app/Controller/ConcursosController.php(214): Model->save(Array)
+#5 [internal function]: ConcursosController->votar('2')
+#6 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ConcursosController), Array)
+#7 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-10-01 01:40:42 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/desafio/app/View/Concursos/parciais.ctp, line 17]
+2013-10-01 01:40:42 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 17, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 17, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 01:41:02 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/desafio/app/View/Concursos/parciais.ctp, line 17]
+2013-10-01 01:41:02 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 17, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 17, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 01:41:15 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/desafio/app/View/Concursos/parciais.ctp, line 17]
+2013-10-01 01:41:15 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 17, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 17, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 02:19:21 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'concurso_id' in group statement is ambiguous
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT count(po...', Array)
+#2 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT count(po...', Array, Array)
+#3 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(539): DboSource->fetchAll('SELECT count(po...')
+#4 [internal function]: DboSource->query('SELECT count(po...')
+#5 /var/www/desafio/lib/Cake/Model/Model.php(3061): call_user_func_array(Array, Array)
+#6 /var/www/desafio/app/Controller/ConcursosController.php(126): Model->query('SELECT count(po...')
+#7 [internal function]: ConcursosController->parciais()
+#8 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ConcursosController), Array)
+#9 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-10-01 02:22:26 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`desafio`.`polls`, CONSTRAINT `polls_ibfk_2` FOREIGN KEY (`concurso_id`) REFERENCES `concursos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /Concursos/votar/5-4
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `de...', Array)
+#2 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `de...')
+#3 /var/www/desafio/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Poll), Array, Array)
+#4 /var/www/desafio/app/Controller/ConcursosController.php(229): Model->save(Array)
+#5 [internal function]: ConcursosController->votar('5-4')
+#6 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ConcursosController), Array)
+#7 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-10-01 02:22:45 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`desafio`.`polls`, CONSTRAINT `polls_ibfk_2` FOREIGN KEY (`concurso_id`) REFERENCES `concursos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+Request URL: /Concursos/votar/5-4
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `de...', Array)
+#2 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `de...')
+#3 /var/www/desafio/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Poll), Array, Array)
+#4 /var/www/desafio/app/Controller/ConcursosController.php(229): Model->save(Array)
+#5 [internal function]: ConcursosController->votar('5-4')
+#6 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ConcursosController), Array)
+#7 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-10-01 02:24:06 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '5' for key 'concurso_id_2'
+Request URL: /Concursos/votar/5-4
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `de...', Array)
+#2 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `de...')
+#3 /var/www/desafio/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Poll), Array, Array)
+#4 /var/www/desafio/app/Controller/ConcursosController.php(229): Model->save(Array)
+#5 [internal function]: ConcursosController->votar('5-4')
+#6 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ConcursosController), Array)
+#7 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-10-01 02:29:05 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/var/www/desafio/app/Controller/ConcursosController.php, line 225]
+2013-10-01 02:29:05 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /Concursos/votar/5-4
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 225)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 225, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 225, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 02:29:08 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/var/www/desafio/app/Controller/ConcursosController.php, line 225]
+2013-10-01 02:29:08 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 225)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 225, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 225, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 02:29:25 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/desafio/app/Controller/ConcursosController.php, line 226]
+2013-10-01 02:29:25 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 226)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 226, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 226, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 02:29:35 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/desafio/app/Controller/ConcursosController.php, line 226]
+2013-10-01 02:29:35 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 226)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 226, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 226, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 02:29:36 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/var/www/desafio/app/Controller/ConcursosController.php, line 226]
+2013-10-01 02:29:36 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 226)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 226, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 226, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 02:29:46 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/desafio/app/Controller/ConcursosController.php, line 225]
+2013-10-01 02:29:46 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 225)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 225, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 225, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 02:29:47 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/desafio/app/Controller/ConcursosController.php, line 225]
+2013-10-01 02:29:47 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 225)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 225, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 225, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 02:29:49 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/desafio/app/Controller/ConcursosController.php, line 225]
+2013-10-01 02:29:49 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/desafi...', 225)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/desafi...', 225, Array)
+#2 /var/www/desafio/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/desafi...', 225, Array)
+#3 /var/www/desafio/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-01 02:32:14 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'user_id'
+Request URL: /photos/add/6
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `de...', Array)
+#2 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `de...')
+#3 /var/www/desafio/lib/Cake/Model/Model.php(1744): DboSource->create(Object(Photo), Array, Array)
+#4 /var/www/desafio/app/Controller/PhotosController.php(113): Model->save(Array)
+#5 [internal function]: PhotosController->add('6')
+#6 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PhotosController), Array)
+#7 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PhotosController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-10-01 02:33:17 Error: [MissingControllerException] Controller class PhpmyadminController could not be found.
+Exception Attributes: array (
+  'class' => 'PhpmyadminController',
+  'plugin' => NULL,
+)
+Request URL: /phpmyadmin/db_sql.php?db=desafio&server=1&token=be560f28aa600299def983f83f74fdb8&db_query_force=1
+Stack Trace:
+#0 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-01 02:44:47 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'concurso_id' in group statement is ambiguous
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT count(po...', Array)
+#2 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT count(po...', Array, Array)
+#3 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(539): DboSource->fetchAll('SELECT count(po...')
+#4 [internal function]: DboSource->query('SELECT count(po...')
+#5 /var/www/desafio/lib/Cake/Model/Model.php(3061): call_user_func_array(Array, Array)
+#6 /var/www/desafio/app/Controller/ConcursosController.php(126): Model->query('SELECT count(po...')
+#7 [internal function]: ConcursosController->parciais()
+#8 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ConcursosController), Array)
+#9 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-10-01 02:46:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'concurso_id' in group statement is ambiguous
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT count(po...', Array)
+#2 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT count(po...', Array, Array)
+#3 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(539): DboSource->fetchAll('SELECT count(po...')
+#4 [internal function]: DboSource->query('SELECT count(po...')
+#5 /var/www/desafio/lib/Cake/Model/Model.php(3061): call_user_func_array(Array, Array)
+#6 /var/www/desafio/app/Controller/ConcursosController.php(126): Model->query('SELECT count(po...')
+#7 [internal function]: ConcursosController->parciais()
+#8 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ConcursosController), Array)
+#9 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-10-01 02:49:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'photo_id.concurso_id' in 'group statement'
+Request URL: /
+Stack Trace:
+#0 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT count(po...', Array)
+#2 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT count(po...', Array, Array)
+#3 /var/www/desafio/lib/Cake/Model/Datasource/DboSource.php(539): DboSource->fetchAll('SELECT count(po...')
+#4 [internal function]: DboSource->query('SELECT count(po...')
+#5 /var/www/desafio/lib/Cake/Model/Model.php(3061): call_user_func_array(Array, Array)
+#6 /var/www/desafio/app/Controller/ConcursosController.php(126): Model->query('SELECT count(po...')
+#7 [internal function]: ConcursosController->parciais()
+#8 /var/www/desafio/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(ConcursosController), Array)
+#9 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/desafio/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#11 /var/www/desafio/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

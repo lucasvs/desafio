@@ -11,10 +11,10 @@
 
 <div class="list-group">
     <?php
- 
+
 
     foreach ($concursos as $row) {
-  $i = 0;
+ 
         ?>
         <div class="panel panel-info">
         <div class="panel-heading">
@@ -24,7 +24,7 @@
         <div class="panel-body">
             <?php
             foreach ($row['photos'] as $row1) {
-                if($i  < 3){
+              
   
                 ?>
                 <div class="row">
@@ -47,7 +47,7 @@
                 </div>
                 
                 <hr>
-            <?php $i++; } } ?>
+            <?php  } ?>
             <div class=" "><?=$this->Html->link('ver todos os participantes',array('controller'=>'Concursos','action'=>'vote',$row['id']));?></div>
         </div>
             </div>

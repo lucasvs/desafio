@@ -32,6 +32,7 @@
                     <th class="actions">Ações</th>
                 </tr>
                 <?php
+              
                 foreach ($concursos as $concurso): ?>
                     <tr>
                         <td><?php echo h($concurso['Concurso']['id']); ?>&nbsp;</td>
