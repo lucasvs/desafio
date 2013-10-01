@@ -285,7 +285,6 @@ class ConcursosController extends AppController
             $votos_photo[$row['concursos']['id']]['total_votos'] += $row[0]['votos'];
             $votos_photo[$row['concursos']['id']]['titulo'] = $row['concursos']['titulo'];
             $votos_photo[$row['concursos']['id']]['id'] = $row['concursos']['id'];
-            $votos_photo[$row['concursos']['id']]['autor'] = $row['users']['autor'];
             $votos_photo[$row['concursos']['id']]['fim'] = self::parseDate($row['concursos']['fim']);
 
             if (!isset($votos_photo[$row['concursos']['id']]['photos']))
@@ -297,7 +296,8 @@ class ConcursosController extends AppController
                     'id' => $row['photos']['id'],
                     'votos' => $row[0]['votos'],
                     'nome' => $row['photos']['nome'],
-                    'photo' => $row['photos']['photo']
+                    'photo' => $row['photos']['photo'],
+                    'autor' => $row['users']['username']
                 );
             }
         }

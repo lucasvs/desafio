@@ -32,11 +32,14 @@
 <img src="<?php echo $this->params->webroot.$row1['thumbnail'] ?>" alt="<?php echo $row1['nome'] ?>" title="<?php echo $row1['nome'] ?>" width="218px" height="163px"></a>
                     </div>
                     <div class="col-lg-2">Autor: <?=$row1['autor']; ?></div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-4">
                         <div class="progress">
                             <div class="progress-bar progress-bar-success" role="progressbar" style="width:<?= $row1['votos_porc']; ?>%">
                             </div>
                         </div>
+                    </div>
+                    <div class="col-lg-2 votos-porc ">
+                        <?=$row1['votos_porc']; ?>%
                     </div>
                      <?=
                         $this->Html->link(
@@ -49,8 +52,6 @@
                 
                 <hr>
             <?php  } ?>
-            <div class=" "><?=$this->Html->link('ver todos os participantes',array('controller'=>'Concursos','action'=>'vote',$row['id']));?></div>
-        </div>
             </div>
 
     <?php } ?>
