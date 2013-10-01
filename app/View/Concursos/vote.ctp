@@ -31,7 +31,8 @@
                     <div class="col-lg-3"><a href="<?php echo $this->params->webroot.$row1['photo'] ?>">
 <img src="<?php echo $this->params->webroot.$row1['thumbnail'] ?>" alt="<?php echo $row1['nome'] ?>" title="<?php echo $row1['nome'] ?>" width="218px" height="163px"></a>
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-2">Autor: <?=$row1['autor']; ?></div>
+                    <div class="col-lg-5">
                         <div class="progress">
                             <div class="progress-bar progress-bar-success" role="progressbar" style="width:<?= $row1['votos_porc']; ?>%">
                             </div>

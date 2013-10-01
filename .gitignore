@@ -9,6 +9,10 @@ app/tmp/*
 /build
 /dist
 /tags
+.idea/*
+.idea/*.*
+app/tmp/*.*
+tmp
 
 # OS generated files #
 ######################

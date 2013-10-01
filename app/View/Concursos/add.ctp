@@ -1,6 +1,6 @@
-<div id="page-container" class="row-fluid">
+<div id="page-container" class="container">
 
-    <div id="sidebar" class="span3">
+    <div id="sidebar" class="span3 col-lg-3">
 
         <div class="actions">
 
@@ -16,7 +16,7 @@
     </div>
     <!-- #sidebar .span3 -->
 
-    <div id="page-content" class="span9">
+    <div id="page-content" class="span9 col-lg-7">
 
         <div class="concursos form">
 
@@ -28,6 +28,14 @@
                     <?php echo $this->Form->label('titulo', 'titulo', array('class' => 'control-label')); ?>
                     <div class="controls">
                         <?php echo $this->Form->input('titulo', array('class' => 'span12 form-control')); ?>
+                    </div>
+                    <!-- .controls -->
+                </div>
+
+                <div class="control-group">
+                    <?php echo $this->Form->label('descricao', 'Descrição', array('class' => 'control-label')); ?>
+                    <div class="controls">
+                        <?php echo $this->Form->textarea('descricao', array('class' => 'span12 form-control')); ?>
                     </div>
                     <!-- .controls -->
                 </div>
@@ -52,7 +60,7 @@
                 <!-- .control-group -->
 
             </fieldset>
-            <?php echo $this->Form->submit('Submit', array('class' => 'btn btn-large btn-primary')); ?>
+            <?php echo $this->Form->submit('Criar', array('class' => 'btn btn-large btn-primary')); ?>
             <?php echo $this->Form->end(); ?>
 
         </div>

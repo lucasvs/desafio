@@ -20,6 +20,7 @@ CREATE TABLE `users` (
 CREATE TABLE IF NOT EXISTS concursos (
 id int(11) NOT NULL AUTO_INCREMENT,
 titulo varchar(255) NOT NULL,
+descricao text,
 inicio date NOT NULL,
 fim date NOT NULL,
 PRIMARY KEY (id)
@@ -34,8 +35,8 @@ ordem int(11) NOT NULL,
 concurso_id int(11) NOT NULL,
 user_id int(11) NOT NULL UNIQUE,
 PRIMARY KEY (id),
-FOREIGN KEY (concurso_id) REFERENCES concursos(id),
-FOREIGN KEY (user_id) REFERENCES users(id)
+FOREIGN KEY (concurso_id) REFERENCES concursos(id) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 CREATE TABLE IF NOT EXISTS ras (
@@ -49,8 +50,8 @@ id int(11) NOT NULL AUTO_INCREMENT,
 photo_id int(11) NOT NULL,
 ra_id int(11) NOT NULL,
 PRIMARY KEY (id),
-FOREIGN KEY (photo_id) REFERENCES concursos(id),
-FOREIGN KEY (ra_id) REFERENCES ra(id)
+FOREIGN KEY (photo_id) REFERENCES concursos(id) ON DELETE CASCADE ON UPDATE CASCADE,
+FOREIGN KEY (ra_id) REFERENCES ras(id) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 

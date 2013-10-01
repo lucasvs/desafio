@@ -73,6 +73,9 @@
                     <li class="<?php echo $this->params->controller == 'concursos' ? 'active' : ''; ?>">
                         <?php echo $this->Html->link('Concursos', array('controller' => 'concursos', 'action'=>'index')) ?>
                     </li>
+                    <li class="<?php echo $this->params->controller == 'ras' ? 'active' : ''; ?>">
+                        <?php echo $this->Html->link('RAs', array('controller' => 'ras', 'action'=>'index')) ?>
+                    </li>
                 <?php } ?>
                 <?php if (!AuthComponent::user('id')) { ?>
                     <li class="<?php echo $this->params->controller == 'users' && $this->params->action == 'add' ? 'active' : '' ?>">
