@@ -36,7 +36,7 @@
 		  </div>
 		  <div class="checkbox">
 		    <label>
-		      <input type="checkbox" name="data[User][remember_me]" value="S"> Remember me
+		      <input type="checkbox" name="data[User][remember_me]" value="S"> Lembre-me
 		    </label>
 		  </div>
 		  <button type="submit" class="btn btn-default">Login</button>

@@ -2069,3 +2069,79 @@ Stack Trace:
 #1 /var/www/desafio2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
 #2 /var/www/desafio2/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2013-09-30 21:27:11 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CURRENT_TME' in 'where clause'
+Request URL: /desafio2/home
+Stack Trace:
+#0 /var/www/desafio2/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /var/www/desafio2/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Concurs...', Array)
+#2 /var/www/desafio2/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Concurs...', Array, Array)
+#3 /var/www/desafio2/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Concurs...', false)
+#4 /var/www/desafio2/lib/Cake/Model/Model.php(2696): DboSource->read(Object(Concurso), Array)
+#5 /var/www/desafio2/app/Controller/PagesController.php(77): Model->find('all', Array)
+#6 [internal function]: PagesController->index()
+#7 /var/www/desafio2/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#8 /var/www/desafio2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/desafio2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/desafio2/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-30 21:41:45 Error: Fatal Error (1): Call to undefined method View::parseDate() in [/var/www/desafio2/app/View/Pages/index.ctp, line 17]
+2013-09-30 21:41:45 Error: [FatalErrorException] Call to undefined method View::parseDate()
+Request URL: /desafio2/home
+Stack Trace:
+#0 /var/www/desafio2/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/desafi...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/desafi...', 17, Array)
+#2 /var/www/desafio2/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/desafi...', 17, Array)
+#3 /var/www/desafio2/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-30 21:42:16 Error: [MissingHelperException] Helper class ConcursoHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ConcursoHelper',
+  'plugin' => false,
+)
+Request URL: /desafio2/home
+Stack Trace:
+#0 /var/www/desafio2/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Concurso')
+#1 /var/www/desafio2/lib/Cake/View/View.php(833): HelperCollection->__isset('Concurso')
+#2 /var/www/desafio2/app/View/Pages/index.ctp(17): View->__get('Concurso')
+#3 /var/www/desafio2/lib/Cake/View/View.php(945): include('/var/www/desafi...')
+#4 /var/www/desafio2/lib/Cake/View/View.php(907): View->_evaluate('/var/www/desafi...', Array)
+#5 /var/www/desafio2/lib/Cake/View/View.php(471): View->_render('/var/www/desafi...')
+#6 /var/www/desafio2/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#7 /var/www/desafio2/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#8 /var/www/desafio2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/desafio2/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-09-30 21:56:18 Error: [MissingActionException] Action ConcursosController::votar() could not be found.
+Exception Attributes: array (
+  'controller' => 'ConcursosController',
+  'action' => 'votar',
+)
+Request URL: /desafio2/Concursos/votar/1
+Stack Trace:
+#0 /var/www/desafio2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio2/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-30 21:58:14 Error: [MissingActionException] Action ConcursosController::votar() could not be found.
+Exception Attributes: array (
+  'controller' => 'ConcursosController',
+  'action' => 'votar',
+)
+Request URL: /desafio2/Concursos/votar/1
+Stack Trace:
+#0 /var/www/desafio2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio2/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-30 22:02:03 Error: [MissingActionException] Action ConcursosController::votar() could not be found.
+Exception Attributes: array (
+  'controller' => 'ConcursosController',
+  'action' => 'votar',
+)
+Request URL: /desafio2/Concursos/votar/2
+Stack Trace:
+#0 /var/www/desafio2/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/desafio2/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(ConcursosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/desafio2/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

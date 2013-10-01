@@ -101,7 +101,7 @@ class UsersController extends AppController
         $this->Error->set( $this->User->invalidFields() );
       }
     }
-    $this->set('label', 'Register user');
+    $this->set('label', 'Registre-se');
     $this->render('_form');
   }
 

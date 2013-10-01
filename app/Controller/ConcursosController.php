@@ -120,12 +120,11 @@ class ConcursosController extends AppController
             FROM `polls`,photos,concursos
             WHERE polls.photo_id = photos.id
             and photos.concurso_id = concursos.id
-            and concursos.fim >= CURRENT_TIME
+            and concursos.fim >= CURRENT_DATE
             group by photo_id, concurso_id
             order by votos desc');
 
         $votos_photo = array();
-
 
         //decompondo array
         foreach ($votos as $key => $row) {
@@ -135,7 +134,7 @@ class ConcursosController extends AppController
             $votos_photo[$row['concursos']['id']]['total_votos'] += $row[0]['votos'];
             $votos_photo[$row['concursos']['id']]['titulo'] = $row['concursos']['titulo'];
             $votos_photo[$row['concursos']['id']]['id'] = $row['concursos']['id'];
-            $votos_photo[$row['concursos']['id']]['fim'] = $this->parseDate($row['concursos']['fim']);
+            $votos_photo[$row['concursos']['id']]['fim'] = self::parseDate($row['concursos']['fim']);
 
             if( !isset( $votos_photo[$row['concursos']['id']]['photos'] ) )
                 $votos_photo[$row['concursos']['id']]['photos'] = array();

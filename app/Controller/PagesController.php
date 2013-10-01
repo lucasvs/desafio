@@ -74,7 +74,8 @@ class PagesController extends AppController {
 	{
         $this->loadModel('Concurso');
         $agora = date('Y-m-d H:i:m');
-        $this->set('concursos',$this->Concurso->find('all',array('conditions'=>array("fim > CURRENT_TIME ")))[0]);
+        $concursos = $this->Concurso->find('all',array('conditions'=>array("fim >  '".date('Y-m-d H:i:m')."'")));
+        $this->set('concursos', count( $concursos )>0 ? $concursos : 0);
 
 	}
 }

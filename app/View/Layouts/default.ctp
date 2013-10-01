@@ -62,6 +62,9 @@
                     <li class="<?php echo $this->params->controller == 'pages' && $this->action == 'index' ? 'active' : ''; ?>">
                         <?php echo $this->Html->link('Home', '/home') ?>
                     </li>
+                    <li class="<?php echo $this->params->controller == 'concursos' && $this->params->action == 'parciais' ? 'active' : '' ?>">
+                        <?php echo $this->Html->link('Parciais', array('controller' => 'concursos', 'action' => 'parciais')) ?>
+                    </li>
                 <?php } ?>
                 <?php if (AuthComponent::user('role') == 'admin') { ?>
                     <li class="<?php echo $this->params->controller == 'users' ? 'active' : ''; ?>">

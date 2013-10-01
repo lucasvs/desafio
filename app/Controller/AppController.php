@@ -78,7 +78,7 @@ class AppController extends Controller
 
     }
 
-    public function parseDate($date, $outputFormat = 'd/m/Y')
+    public static function parseDate($date, $outputFormat = 'd/m/Y')
     {
         $formats = array(
             'd/m/Y',

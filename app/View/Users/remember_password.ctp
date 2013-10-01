@@ -21,16 +21,14 @@
 		)
 	);
 	?>
-		<h2><?php echo __('Forgot your password?') ?></h2>
+		<h2><?php echo __('Esquece sua senha?') ?></h2>
 		<hr>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. </p>
 	  <div class="form-group">
-	    <label for="exampleInputEmail1">Email address</label>
+	    <label for="exampleInputEmail1">Digite seu e-mail.</label>
 	    <?php echo $this->Form->input('email',array('placeholder' => __('E-mail'),'class' => 'form-control email-field')); ?>
 	  </div>
 
-	  <button type="submit" class="btn btn-primary btn-lg">Next step</button>
+	  <button type="submit" class="btn btn-primary btn-lg">Avançar</button>
 
 	</form>
 	</div>
